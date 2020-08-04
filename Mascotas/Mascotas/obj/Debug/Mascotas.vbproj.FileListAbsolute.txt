@@ -12,3 +12,14 @@ C:\Users\Alumno\source\repos\Mascotas\Mascotas\obj\Debug\Mascotas.vbprojAssembly
 C:\Users\Alumno\source\repos\Mascotas\Mascotas\obj\Debug\Mascotas.Persona.resources
 C:\Users\Alumno\source\repos\Mascotas\Mascotas\obj\Debug\Mascotas.Inicio.resources
 C:\Users\Alumno\source\repos\Mascotas\Mascotas\obj\Debug\Mascotas.Mascota.resources
+C:\Users\Alumno\source\repos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.vbprojAssemblyReference.cache
+C:\Users\Alumno\source\repos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.Persona.resources
+C:\Users\Alumno\source\repos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.Inicio.resources
+C:\Users\Alumno\source\repos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.Mascota.resources
+C:\Users\Alumno\source\repos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.Resources.resources
+C:\Users\Alumno\source\repos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.vbproj.GenerateResource.cache
+C:\Users\Alumno\source\repos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.vbproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.exe
+C:\Users\Alumno\source\repos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.xml
+C:\Users\Alumno\source\repos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.pdb
+C:\Users\Alumno\source\repos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.Veterinaria.resources

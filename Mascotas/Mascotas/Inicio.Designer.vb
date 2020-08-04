@@ -62,7 +62,7 @@ Partial Class Inicio
         Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.PersonaToolStripMenuItem.Text = "Persona"
         '
-        'Inicio
+        'Veterinaria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -71,7 +71,7 @@ Partial Class Inicio
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Inicio"
+        Me.Name = "Veterinaria"
         Me.Text = "Inicio"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
