@@ -3,7 +3,7 @@
         Try
             Dim nombre As String
             Dim dir As String
-            Dim ci As String
+            Dim ci As Integer
             Dim tel As String
 
             nombre = NombreP.Text
@@ -20,11 +20,7 @@
             Dim logica = New LogicaPersona
             logica.altaPersona(newPersona)
         Catch ex As Exception
-
+            Throw ex
         End Try
-    End Sub
-
-    Private Sub Persona_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class
