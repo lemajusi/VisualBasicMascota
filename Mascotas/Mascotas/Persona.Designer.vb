@@ -49,7 +49,7 @@ Partial Class Persona
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(72, 77)
+        Me.Label2.Location = New System.Drawing.Point(72, 113)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 1
@@ -57,14 +57,14 @@ Partial Class Persona
         '
         'NombreP
         '
-        Me.NombreP.Location = New System.Drawing.Point(122, 74)
+        Me.NombreP.Location = New System.Drawing.Point(130, 110)
         Me.NombreP.Name = "NombreP"
         Me.NombreP.Size = New System.Drawing.Size(125, 20)
         Me.NombreP.TabIndex = 7
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(109, 312)
+        Me.Button1.Location = New System.Drawing.Point(120, 237)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 12
@@ -88,7 +88,7 @@ Partial Class Persona
         '
         'CiP
         '
-        Me.CiP.Location = New System.Drawing.Point(95, 197)
+        Me.CiP.Location = New System.Drawing.Point(130, 161)
         Me.CiP.Name = "CiP"
         Me.CiP.Size = New System.Drawing.Size(125, 20)
         Me.CiP.TabIndex = 18
@@ -96,7 +96,7 @@ Partial Class Persona
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(72, 200)
+        Me.Label5.Location = New System.Drawing.Point(72, 164)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(17, 13)
         Me.Label5.TabIndex = 17
@@ -104,7 +104,7 @@ Partial Class Persona
         '
         'TelefonoP
         '
-        Me.TelefonoP.Location = New System.Drawing.Point(127, 269)
+        Me.TelefonoP.Location = New System.Drawing.Point(130, 187)
         Me.TelefonoP.Name = "TelefonoP"
         Me.TelefonoP.Size = New System.Drawing.Size(125, 20)
         Me.TelefonoP.TabIndex = 24
@@ -112,7 +112,7 @@ Partial Class Persona
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(72, 272)
+        Me.Label9.Location = New System.Drawing.Point(67, 190)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(49, 13)
         Me.Label9.TabIndex = 23
@@ -121,7 +121,7 @@ Partial Class Persona
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(72, 138)
+        Me.Label10.Location = New System.Drawing.Point(69, 138)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(52, 13)
         Me.Label10.TabIndex = 25
@@ -140,7 +140,7 @@ Partial Class Persona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(325, 340)
+        Me.ClientSize = New System.Drawing.Size(325, 278)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.TelefonoP)

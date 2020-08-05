@@ -21,19 +21,19 @@
             direccionCP = value
         End Set
     End Property
-    Public Property telefono As String
+    Public Property telefono As Integer
         Get
             Return telefonoCP
         End Get
-        Set(value As String)
+        Set(value As Integer)
             telefonoCP = value
         End Set
     End Property
-    Public Property cedula As String
+    Public Property cedula As Integer
         Get
             Return cedulaCP
         End Get
-        Set(value As String)
+        Set(value As Integer)
             cedulaCP = value
         End Set
     End Property
