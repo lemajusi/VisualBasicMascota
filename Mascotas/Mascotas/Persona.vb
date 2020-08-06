@@ -32,7 +32,6 @@
             Dim logica As New LogicaPersona
             Persona = logica.buscarPersona(cedula)
             If IsNothing(Persona) Then
-                NombreP.Text = "no hay nada tarado"
             Else
                 NombreP.Text = Persona.nombre
                 DireccionP.Text = Persona.direccion
