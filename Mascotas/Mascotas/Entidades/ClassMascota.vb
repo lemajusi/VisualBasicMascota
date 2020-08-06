@@ -1,6 +1,6 @@
 ﻿Public Class ClassMascota
     Private NombreCM As String
-    Private AñoNacCM As String
+    Private AñoNacCM As Integer
     Private CedulaPCM As Integer
     Public Property nombreM As String
         Get
@@ -10,11 +10,11 @@
             NombreCM = value
         End Set
     End Property
-    Public Property añoNacM As String
+    Public Property añoNacM As Integer
         Get
             Return AñoNacCM
         End Get
-        Set(value As String)
+        Set(value As Integer)
             AñoNacCM = value
         End Set
     End Property
@@ -26,7 +26,7 @@
             CedulaPCM = value
         End Set
     End Property
-    Public Sub CrearMascota(NombreCM As String, AñoNacCM As String, cedulaPCM As Integer)
+    Public Sub CrearMascota(NombreCM As String, AñoNacCM As Integer, cedulaPCM As Integer)
         NombreCM = Me.NombreCM
         AñoNacCM = Me.AñoNacCM
         cedulaPCM = Me.CedulaPCM
