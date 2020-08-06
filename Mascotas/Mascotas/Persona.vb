@@ -23,4 +23,22 @@
             Throw ex
         End Try
     End Sub
+
+    Private Sub CiP_TextChanged(sender As Object, e As EventArgs) Handles CiP.TextChanged
+        Try
+            Dim cedula As Integer
+            cedula = CiP.Text
+            Dim Persona As New ClassPersona
+            Dim logica As New LogicaPersona
+            Persona = logica.buscarPersona(cedula)
+            If IsNothing(Persona) Then
+                NombreP.Text = "no hay nada tarado"
+            Else
+                NombreP.Text = Persona.nombre
+                DireccionP.Text = Persona.direccion
+            End If
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
 End Class

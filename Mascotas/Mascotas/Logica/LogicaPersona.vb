@@ -3,4 +3,8 @@
         Dim persistencia = New PersonaController
         persistencia.altaPersona(personaUser)
     End Sub
+    Public Function buscarPersona(ci As Integer) As ClassPersona
+        Dim persistencia = New PersonaController
+        Return persistencia.buscarPersona(ci)
+    End Function
 End Class
