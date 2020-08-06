@@ -25,8 +25,16 @@ Partial Class Inicio
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inicio))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.MascotaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PersonaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CrearMascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ActualizarMascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BorrarMascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListarMascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CrearPersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ActualizarPersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BorrarPersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListarPersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -43,26 +51,76 @@ Partial Class Inicio
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MascotaToolStripMenuItem, Me.PersonaToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MascotaMenu, Me.PersonaMenu})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(383, 24)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'MascotaToolStripMenuItem
+        'MascotaMenu
         '
-        Me.MascotaToolStripMenuItem.Name = "MascotaToolStripMenuItem"
-        Me.MascotaToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
-        Me.MascotaToolStripMenuItem.Text = "Mascota"
+        Me.MascotaMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearMascotaMenu, Me.ActualizarMascotaMenu, Me.BorrarMascotaMenu, Me.ListarMascotaMenu})
+        Me.MascotaMenu.Name = "MascotaMenu"
+        Me.MascotaMenu.Size = New System.Drawing.Size(64, 20)
+        Me.MascotaMenu.Text = "Mascota"
         '
-        'PersonaToolStripMenuItem
+        'CrearMascotaMenu
         '
-        Me.PersonaToolStripMenuItem.Name = "PersonaToolStripMenuItem"
-        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
-        Me.PersonaToolStripMenuItem.Text = "Persona"
+        Me.CrearMascotaMenu.Name = "CrearMascotaMenu"
+        Me.CrearMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.CrearMascotaMenu.Text = "Crear"
         '
-        'Veterinaria
+        'ActualizarMascotaMenu
+        '
+        Me.ActualizarMascotaMenu.Name = "ActualizarMascotaMenu"
+        Me.ActualizarMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.ActualizarMascotaMenu.Text = "Actualizar"
+        '
+        'BorrarMascotaMenu
+        '
+        Me.BorrarMascotaMenu.Name = "BorrarMascotaMenu"
+        Me.BorrarMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.BorrarMascotaMenu.Text = "Borrar"
+        '
+        'ListarMascotaMenu
+        '
+        Me.ListarMascotaMenu.Name = "ListarMascotaMenu"
+        Me.ListarMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.ListarMascotaMenu.Text = "Listar"
+        '
+        'PersonaMenu
+        '
+        Me.PersonaMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearPersonaMenu, Me.ActualizarPersonaMenu, Me.BorrarPersonaMenu, Me.ListarPersonaMenu})
+        Me.PersonaMenu.Name = "PersonaMenu"
+        Me.PersonaMenu.Size = New System.Drawing.Size(61, 20)
+        Me.PersonaMenu.Text = "Persona"
+        '
+        'CrearPersonaMenu
+        '
+        Me.CrearPersonaMenu.Name = "CrearPersonaMenu"
+        Me.CrearPersonaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.CrearPersonaMenu.Text = "Crear"
+        '
+        'ActualizarPersonaMenu
+        '
+        Me.ActualizarPersonaMenu.Name = "ActualizarPersonaMenu"
+        Me.ActualizarPersonaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.ActualizarPersonaMenu.Text = "Actualizar"
+        '
+        'BorrarPersonaMenu
+        '
+        Me.BorrarPersonaMenu.Name = "BorrarPersonaMenu"
+        Me.BorrarPersonaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.BorrarPersonaMenu.Text = "Borrar"
+        '
+        'ListarPersonaMenu
+        '
+        Me.ListarPersonaMenu.Name = "ListarPersonaMenu"
+        Me.ListarPersonaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.ListarPersonaMenu.Text = "Listar"
+        '
+        'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -71,7 +129,7 @@ Partial Class Inicio
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Veterinaria"
+        Me.Name = "Inicio"
         Me.Text = "Inicio"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
@@ -82,6 +140,14 @@ Partial Class Inicio
     End Sub
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents MascotaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents PersonaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MascotaMenu As ToolStripMenuItem
+    Friend WithEvents PersonaMenu As ToolStripMenuItem
+    Friend WithEvents CrearMascotaMenu As ToolStripMenuItem
+    Friend WithEvents ActualizarMascotaMenu As ToolStripMenuItem
+    Friend WithEvents BorrarMascotaMenu As ToolStripMenuItem
+    Friend WithEvents CrearPersonaMenu As ToolStripMenuItem
+    Friend WithEvents ActualizarPersonaMenu As ToolStripMenuItem
+    Friend WithEvents BorrarPersonaMenu As ToolStripMenuItem
+    Friend WithEvents ListarMascotaMenu As ToolStripMenuItem
+    Friend WithEvents ListarPersonaMenu As ToolStripMenuItem
 End Class

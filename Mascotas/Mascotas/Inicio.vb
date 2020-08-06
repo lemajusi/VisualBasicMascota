@@ -1,8 +1,8 @@
 ﻿Public Class Inicio
-    Private Sub MascotaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MascotaToolStripMenuItem.Click
-        Mascota.ShowDialog()
-    End Sub
-    Private Sub PersonaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PersonaToolStripMenuItem.Click
+    Private Sub CrearPersonaMenu_Click(sender As Object, e As EventArgs) Handles CrearPersonaMenu.Click
         Persona.ShowDialog()
+    End Sub
+    Private Sub CrearMascotaMenu_Click(sender As Object, e As EventArgs) Handles CrearMascotaMenu.Click
+        Mascota.ShowDialog()
     End Sub
 End Class
