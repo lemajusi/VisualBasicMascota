@@ -19,6 +19,7 @@
             'llamar logica'
             Dim logica = New LogicaPersona
             logica.altaPersona(newPersona)
+            logica.altaTelefono(newPersona)
         Catch ex As Exception
             Throw ex
         End Try
