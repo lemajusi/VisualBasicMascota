@@ -8,9 +8,10 @@
             Dim cmd = New Npgsql.NpgsqlCommand(CadenaDeComandos)
             cmd.Connection = conection_Npg
             cmd.Parameters.Add("@ciP", NpgsqlTypes.NpgsqlDbType.Integer).Value = mascotaUser.cedulaP
-            cmd.Parameters.Add("@nombreM", NpgsqlTypes.NpgsqlDbType.Varchar).Value = mascotaUser.nombreM
-            cmd.Parameters.Add("@añoNac", NpgsqlTypes.NpgsqlDbType.Varchar).Value = mascotaUser.añoNacM
-            Dim resultado As Integer = cmd.ExecuteNonQuery()
+            cmd.Parameters.Add("@nombreM", NpgsqlTypes.NpgsqlDbType.Varchar, 100).Value = mascotaUser.nombreM
+            cmd.Parameters.Add("@añoNac", NpgsqlTypes.NpgsqlDbType.Varchar, 100).Value = mascotaUser.añoNacM
+            Dim resultado As Integer
+            resultado = cmd.ExecuteNonQuery()
         Catch ex As Exception
             Throw ex
         Finally

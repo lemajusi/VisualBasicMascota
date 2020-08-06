@@ -37,7 +37,7 @@ Partial Class Mascota
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(149, 99)
+        Me.Label12.Location = New System.Drawing.Point(149, 76)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(47, 13)
         Me.Label12.TabIndex = 32
@@ -45,7 +45,7 @@ Partial Class Mascota
         '
         'AñoNacMas
         '
-        Me.AñoNacMas.Location = New System.Drawing.Point(130, 188)
+        Me.AñoNacMas.Location = New System.Drawing.Point(130, 165)
         Me.AñoNacMas.Name = "AñoNacMas"
         Me.AñoNacMas.Size = New System.Drawing.Size(137, 20)
         Me.AñoNacMas.TabIndex = 31
@@ -53,7 +53,7 @@ Partial Class Mascota
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(79, 191)
+        Me.Label6.Location = New System.Drawing.Point(79, 168)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(45, 13)
         Me.Label6.TabIndex = 30
@@ -61,7 +61,7 @@ Partial Class Mascota
         '
         'NombreMas
         '
-        Me.NombreMas.Location = New System.Drawing.Point(130, 136)
+        Me.NombreMas.Location = New System.Drawing.Point(130, 113)
         Me.NombreMas.Name = "NombreMas"
         Me.NombreMas.Size = New System.Drawing.Size(137, 20)
         Me.NombreMas.TabIndex = 29
@@ -69,7 +69,7 @@ Partial Class Mascota
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(80, 139)
+        Me.Label4.Location = New System.Drawing.Point(80, 116)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(44, 13)
         Me.Label4.TabIndex = 28
@@ -86,7 +86,7 @@ Partial Class Mascota
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(130, 245)
+        Me.Button1.Location = New System.Drawing.Point(131, 211)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 34
@@ -95,7 +95,7 @@ Partial Class Mascota
         '
         'CedulaPer
         '
-        Me.CedulaPer.Location = New System.Drawing.Point(131, 162)
+        Me.CedulaPer.Location = New System.Drawing.Point(131, 139)
         Me.CedulaPer.Name = "CedulaPer"
         Me.CedulaPer.Size = New System.Drawing.Size(137, 20)
         Me.CedulaPer.TabIndex = 36
@@ -103,7 +103,7 @@ Partial Class Mascota
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(81, 165)
+        Me.Label2.Location = New System.Drawing.Point(81, 142)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(47, 13)
         Me.Label2.TabIndex = 35
@@ -113,7 +113,7 @@ Partial Class Mascota
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(353, 298)
+        Me.ClientSize = New System.Drawing.Size(353, 253)
         Me.Controls.Add(Me.CedulaPer)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)

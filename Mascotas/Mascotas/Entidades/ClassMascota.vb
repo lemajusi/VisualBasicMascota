@@ -18,11 +18,11 @@
             AñoNacCM = value
         End Set
     End Property
-    Public Property cedulaP As String
+    Public Property cedulaP As Integer
         Get
             Return CedulaPCM
         End Get
-        Set(value As String)
+        Set(value As Integer)
             CedulaPCM = value
         End Set
     End Property
