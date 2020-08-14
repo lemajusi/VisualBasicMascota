@@ -35,6 +35,9 @@ Partial Class Persona
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.oneMtelefono = New System.Windows.Forms.Button()
+        Me.Ltel = New System.Windows.Forms.Button()
+        Me.ListView1 = New System.Windows.Forms.ListView()
         Me.SuspendLayout()
         '
         'Label1
@@ -136,11 +139,42 @@ Partial Class Persona
         Me.Label11.TabIndex = 26
         Me.Label11.Text = "persona"
         '
+        'oneMtelefono
+        '
+        Me.oneMtelefono.Location = New System.Drawing.Point(261, 187)
+        Me.oneMtelefono.Name = "oneMtelefono"
+        Me.oneMtelefono.Size = New System.Drawing.Size(41, 20)
+        Me.oneMtelefono.TabIndex = 27
+        Me.oneMtelefono.Text = "+"
+        Me.oneMtelefono.UseVisualStyleBackColor = True
+        '
+        'Ltel
+        '
+        Me.Ltel.Location = New System.Drawing.Point(261, 213)
+        Me.Ltel.Name = "Ltel"
+        Me.Ltel.Size = New System.Drawing.Size(48, 24)
+        Me.Ltel.TabIndex = 28
+        Me.Ltel.Text = "LTel"
+        Me.Ltel.UseVisualStyleBackColor = True
+        '
+        'ListView1
+        '
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(327, 110)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(152, 96)
+        Me.ListView1.TabIndex = 29
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.List
+        '
         'Persona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(325, 278)
+        Me.ClientSize = New System.Drawing.Size(493, 278)
+        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.Ltel)
+        Me.Controls.Add(Me.oneMtelefono)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.TelefonoP)
@@ -173,4 +207,7 @@ Partial Class Persona
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
+    Friend WithEvents oneMtelefono As Button
+    Friend WithEvents Ltel As Button
+    Friend WithEvents ListView1 As ListView
 End Class
