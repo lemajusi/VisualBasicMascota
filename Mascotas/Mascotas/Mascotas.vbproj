@@ -106,12 +106,6 @@
   <ItemGroup>
     <Compile Include="Entidades\ClassPersona.vb" />
     <Compile Include="Entidades\ClassMascota.vb" />
-    <Compile Include="Lista Telefonos.Designer.vb">
-      <DependentUpon>Lista Telefonos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Lista Telefonos.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Logica\LogicaMascota.vb" />
     <Compile Include="Logica\LogicaPersona.vb" />
     <Compile Include="Persistencia\MascotaController.vb" />
@@ -154,9 +148,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Lista Telefonos.resx">
-      <DependentUpon>Lista Telefonos.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Persona.resx">
       <DependentUpon>Persona.vb</DependentUpon>
     </EmbeddedResource>

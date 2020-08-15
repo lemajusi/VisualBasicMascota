@@ -2,7 +2,7 @@
     Private nombreCP As String
     Private direccionCP As String
     Private telefonoCP As List(Of Integer)
-    Private cedulaCP As String
+    Private cedulaCP As Integer
 
 
     Public Property nombre As String
@@ -38,7 +38,7 @@
         End Set
     End Property
 
-    Public Sub CrearPersona(NombreCP As String, DireccionCP As String, TelefonoCP As List(Of Integer), CedulaCP As String)
+    Public Sub CrearPersona(NombreCP As String, DireccionCP As String, TelefonoCP As List(Of Integer), CedulaCP As Integer)
         NombreCP = Me.nombreCP
         DireccionCP = Me.direccionCP
         TelefonoCP = Me.telefonoCP
