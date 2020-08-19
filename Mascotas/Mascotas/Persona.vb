@@ -46,7 +46,7 @@
             Dim cedula As Integer
             cedula = CiP.Text
             Dim Persona As New ClassPersona
-            Dim Telefonos As List(Of Integer)
+            Dim Telefonos As ClassPersona
             Dim logica As New LogicaPersona
             Persona = logica.buscarPersona(cedula)
             If IsNothing(Persona) Then
@@ -57,13 +57,14 @@
             Telefonos = logica.buscarTelefonos(cedula)
             If IsNothing(Telefonos) Then
             Else
-                For index As Integer = -1 + 1 To Telefonos.Count - 1
-                    Debug.WriteLine(Telefonos(index))
-                    ListView1.Items.Add(Telefonos(index))
+                For index As Integer = 0 To Telefonos.telefono.Count - 1
+                    ListView1.Items.Add(Telefonos.telefono(index))
                 Next
             End If
         Catch ex As Exception
             Throw ex
         End Try
     End Sub
+
+
 End Class
