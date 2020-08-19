@@ -8,7 +8,7 @@
         Dim persistencia = New PersonaController
         Return persistencia.buscarPersona(ci)
     End Function
-    Public Function buscarTelefonos(ci As Integer) As List(Of ClassPersona)
+    Public Function buscarTelefonos(ci As Integer) As ClassPersona
         Dim persistencia = New PersonaController
         Return persistencia.buscarTelefonos(ci)
     End Function

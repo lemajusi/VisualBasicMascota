@@ -1,6 +1,6 @@
 ﻿Public Class PersonaController
-    Dim xss As New List(Of ClassPersona)
     Dim conection_Npg = New Npgsql.NpgsqlConnection
+    Dim ListaTelefonos = New List(Of Integer)
     Public Sub altaPersona(personaUser As ClassPersona)
         Try
             Dim conection = New Conextion
@@ -73,7 +73,7 @@
             conection_Npg.close
         End Try
     End Function
-    Public Function buscarTelefonos(ci As Integer) As List(Of ClassPersona)
+    Public Function buscarTelefonos(ci As Integer) As ClassPersona
         Try
             Dim Persona As New ClassPersona
             Dim ClaseSnl As New Conextion
@@ -86,14 +86,15 @@
             cmd.CommandText = cadenaDeComandos
             cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = ci
             Dim Lector As Npgsql.NpgsqlDataReader = cmd.ExecuteReader
+            Dim x As Integer
             While Lector.Read()
-                Dim newPersona As New ClassPersona
-                newPersona.telefono.Add(Convert.ToInt32(Lector(1).ToString))
-                xss.Add(newPersona)
+                x = Convert.ToInt32(Lector(1).ToString)
+                ListaTelefonos.Add(x)
             End While
-            If IsNothing(xss) Then
+            Persona.telefono = ListaTelefonos
+            If IsNothing(Persona) Then
             Else
-                Return xss
+                Return Persona
             End If
         Catch ex As Exception
             Throw ex
