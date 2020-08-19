@@ -15,3 +15,6 @@ Mascotas/.vs/Mascotas/v16/.suo
 Mascotas/Mascotas/bin/Debug/Mascotas.pdb
 *.pdb
 *.cache
+*.cache
+*.manifest
+*.testlog
