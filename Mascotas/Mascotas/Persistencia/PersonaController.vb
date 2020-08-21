@@ -5,7 +5,7 @@
         Try
             Dim conection = New Conextion
             conection_Npg = conection.AbrirConextion
-            Dim CadenaDeComandos = "insert into persona (ci, nombre, direccion) values (@ci, @nombre, @direccion);"
+            Dim CadenaDeComandos = "insert into persona (ci, nombre, direccion) values (@ci, @nombre, @direccion)"
             Dim cmd = New Npgsql.NpgsqlCommand(CadenaDeComandos)
             cmd.Connection = conection_Npg
             cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = personaUser.cedula
@@ -40,9 +40,7 @@
         End Try
     End Sub
     Public Function chequearCI(ci As Integer) As ClassPersona
-        Dim conection = New Conextion
-        conection_Npg = conection.AbrirConextion
-        Dim CadenaDeComandos = "select "
+
     End Function
     Public Function buscarPersona(ci As Integer) As ClassPersona
         Try
