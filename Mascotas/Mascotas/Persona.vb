@@ -6,9 +6,9 @@
             Dim dir As String
             Dim ci As Integer
 
-            nombre = NombrePR.Text
-            dir = DireccionPR.Text
-            ci = CiPR.Text
+            nombre = NombreP.Text
+            dir = DireccionP.Text
+            ci = CiP.Text
 
 
             Dim newPersona = New ClassPersona()
@@ -23,16 +23,48 @@
             Throw ex
         End Try
     End Sub
-    Private Sub oneMtelefonoR_Click(sender As Object, e As EventArgs) Handles oneMtelefonoR.Click
+
+    Private Sub CiP_TextChanged(sender As Object, e As EventArgs) Handles CiP.TextChanged
+
+    End Sub
+
+    Private Sub oneMtelefono_Click(sender As Object, e As EventArgs) Handles oneMtelefono.Click
         Dim telefono As Integer
         Try
-            telefono = TelefonoPR.Text
+            telefono = TelefonoP.Text
             ListView1.Items.Add(telefono)
             Ltelefono.add(telefono)
-            TelefonoPR.Text = ""
+            TelefonoP.Text = ""
         Catch ex As Exception
             Debug.WriteLine(ex)
-            TelefonoPR.Text = "solo numeros"
+            TelefonoP.Text = "solo numeros"
         End Try
     End Sub
+
+    Private Sub Busqueda_Click(sender As Object, e As EventArgs) Handles Busqueda.Click
+        Try
+            Dim cedula As Integer
+            cedula = CiP.Text
+            Dim Persona As New ClassPersona
+            Dim Telefonos As ClassPersona
+            Dim logica As New LogicaPersona
+            Persona = logica.buscarPersona(cedula)
+            If IsNothing(Persona) Then
+            Else
+                NombreP.Text = Persona.nombre
+                DireccionP.Text = Persona.direccion
+            End If
+            Telefonos = logica.buscarTelefonos(cedula)
+            If IsNothing(Telefonos) Then
+            Else
+                For index As Integer = 0 To Telefonos.telefono.Count - 1
+                    ListView1.Items.Add(Telefonos.telefono(index))
+                Next
+            End If
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+
 End Class

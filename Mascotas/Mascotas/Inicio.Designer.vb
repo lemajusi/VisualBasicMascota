@@ -27,12 +27,12 @@ Partial Class Inicio
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearMascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuscaryActualizarM = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ActualizarMascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.BorrarMascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListarMascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.PersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearPersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuscaryActualizarP = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ActualizarPersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.BorrarPersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListarPersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -41,11 +41,10 @@ Partial Class Inicio
         '
         'PictureBox1
         '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 24)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 27)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(413, 378)
+        Me.PictureBox1.Size = New System.Drawing.Size(382, 375)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -55,13 +54,13 @@ Partial Class Inicio
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MascotaMenu, Me.PersonaMenu})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(413, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(383, 24)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'MascotaMenu
         '
-        Me.MascotaMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearMascotaMenu, Me.BuscaryActualizarM, Me.BorrarMascotaMenu, Me.ListarMascotaMenu})
+        Me.MascotaMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearMascotaMenu, Me.ActualizarMascotaMenu, Me.BorrarMascotaMenu, Me.ListarMascotaMenu})
         Me.MascotaMenu.Name = "MascotaMenu"
         Me.MascotaMenu.Size = New System.Drawing.Size(64, 20)
         Me.MascotaMenu.Text = "Mascota"
@@ -69,30 +68,30 @@ Partial Class Inicio
         'CrearMascotaMenu
         '
         Me.CrearMascotaMenu.Name = "CrearMascotaMenu"
-        Me.CrearMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.CrearMascotaMenu.Size = New System.Drawing.Size(126, 22)
         Me.CrearMascotaMenu.Text = "Crear"
         '
-        'BuscaryActualizarM
+        'ActualizarMascotaMenu
         '
-        Me.BuscaryActualizarM.Name = "BuscaryActualizarM"
-        Me.BuscaryActualizarM.Size = New System.Drawing.Size(180, 22)
-        Me.BuscaryActualizarM.Text = "Buscar Actualizar"
+        Me.ActualizarMascotaMenu.Name = "ActualizarMascotaMenu"
+        Me.ActualizarMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.ActualizarMascotaMenu.Text = "Buscar y Actualizar"
         '
         'BorrarMascotaMenu
         '
         Me.BorrarMascotaMenu.Name = "BorrarMascotaMenu"
-        Me.BorrarMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.BorrarMascotaMenu.Size = New System.Drawing.Size(126, 22)
         Me.BorrarMascotaMenu.Text = "Borrar"
         '
         'ListarMascotaMenu
         '
         Me.ListarMascotaMenu.Name = "ListarMascotaMenu"
-        Me.ListarMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.ListarMascotaMenu.Size = New System.Drawing.Size(126, 22)
         Me.ListarMascotaMenu.Text = "Listar"
         '
         'PersonaMenu
         '
-        Me.PersonaMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearPersonaMenu, Me.BuscaryActualizarP, Me.BorrarPersonaMenu, Me.ListarPersonaMenu})
+        Me.PersonaMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearPersonaMenu, Me.ActualizarPersonaMenu, Me.BorrarPersonaMenu, Me.ListarPersonaMenu})
         Me.PersonaMenu.Name = "PersonaMenu"
         Me.PersonaMenu.Size = New System.Drawing.Size(61, 20)
         Me.PersonaMenu.Text = "Persona"
@@ -100,32 +99,32 @@ Partial Class Inicio
         'CrearPersonaMenu
         '
         Me.CrearPersonaMenu.Name = "CrearPersonaMenu"
-        Me.CrearPersonaMenu.Size = New System.Drawing.Size(192, 22)
+        Me.CrearPersonaMenu.Size = New System.Drawing.Size(126, 22)
         Me.CrearPersonaMenu.Text = "Crear"
         '
-        'BuscaryActualizarP
+        'ActualizarPersonaMenu
         '
-        Me.BuscaryActualizarP.Name = "BuscaryActualizarP"
-        Me.BuscaryActualizarP.Size = New System.Drawing.Size(192, 22)
-        Me.BuscaryActualizarP.Text = "Buscar(CI) y Actualizar"
+        Me.ActualizarPersonaMenu.Name = "ActualizarPersonaMenu"
+        Me.ActualizarPersonaMenu.Size = New System.Drawing.Size(126, 22)
+        Me.ActualizarPersonaMenu.Text = "Actualizar"
         '
         'BorrarPersonaMenu
         '
         Me.BorrarPersonaMenu.Name = "BorrarPersonaMenu"
-        Me.BorrarPersonaMenu.Size = New System.Drawing.Size(192, 22)
+        Me.BorrarPersonaMenu.Size = New System.Drawing.Size(126, 22)
         Me.BorrarPersonaMenu.Text = "Borrar"
         '
         'ListarPersonaMenu
         '
         Me.ListarPersonaMenu.Name = "ListarPersonaMenu"
-        Me.ListarPersonaMenu.Size = New System.Drawing.Size(192, 22)
+        Me.ListarPersonaMenu.Size = New System.Drawing.Size(126, 22)
         Me.ListarPersonaMenu.Text = "Listar"
         '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(413, 402)
+        Me.ClientSize = New System.Drawing.Size(383, 402)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -144,10 +143,10 @@ Partial Class Inicio
     Friend WithEvents MascotaMenu As ToolStripMenuItem
     Friend WithEvents PersonaMenu As ToolStripMenuItem
     Friend WithEvents CrearMascotaMenu As ToolStripMenuItem
-    Friend WithEvents BuscaryActualizarM As ToolStripMenuItem
+    Friend WithEvents ActualizarMascotaMenu As ToolStripMenuItem
     Friend WithEvents BorrarMascotaMenu As ToolStripMenuItem
     Friend WithEvents CrearPersonaMenu As ToolStripMenuItem
-    Friend WithEvents BuscaryActualizarP As ToolStripMenuItem
+    Friend WithEvents ActualizarPersonaMenu As ToolStripMenuItem
     Friend WithEvents BorrarPersonaMenu As ToolStripMenuItem
     Friend WithEvents ListarMascotaMenu As ToolStripMenuItem
     Friend WithEvents ListarPersonaMenu As ToolStripMenuItem
