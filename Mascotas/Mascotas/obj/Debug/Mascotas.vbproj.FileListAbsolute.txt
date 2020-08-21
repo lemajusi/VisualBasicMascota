@@ -84,3 +84,4 @@ C:\Users\Admin\Desktop\proyectos\VisualBasicMascota\Mascotas\Mascotas\bin\Debug\
 C:\Users\Admin\Desktop\proyectos\VisualBasicMascota\Mascotas\Mascotas\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Admin\Desktop\proyectos\VisualBasicMascota\Mascotas\Mascotas\bin\Debug\System.ValueTuple.xml
 C:\Users\Admin\Desktop\proyectos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.vbproj.CopyComplete
+C:\Users\Admin\Desktop\proyectos\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.BuscaryActualizar.resources

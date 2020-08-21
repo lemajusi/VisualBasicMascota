@@ -6,11 +6,11 @@
         Mascota.ShowDialog()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub BuscaryActualizarM_Click(sender As Object, e As EventArgs) Handles BuscaryActualizarM.Click
 
     End Sub
 
-    Private Sub ActualizarMascotaMenu_Click(sender As Object, e As EventArgs) Handles ActualizarMascotaMenu.Click
-
+    Private Sub BuscaryActualizarP_Click(sender As Object, e As EventArgs) Handles BuscaryActualizarP.Click
+        BuscaryActualizar.ShowDialog()
     End Sub
 End Class

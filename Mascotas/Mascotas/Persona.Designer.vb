@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Persona
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,24 +20,23 @@ Partial Class Persona
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Persona))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.NombreP = New System.Windows.Forms.TextBox()
+        Me.NombrePR = New System.Windows.Forms.TextBox()
         Me.Registro = New System.Windows.Forms.Button()
-        Me.DireccionP = New System.Windows.Forms.TextBox()
+        Me.DireccionPR = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.CiP = New System.Windows.Forms.TextBox()
+        Me.CiPR = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TelefonoP = New System.Windows.Forms.TextBox()
+        Me.TelefonoPR = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.oneMtelefono = New System.Windows.Forms.Button()
+        Me.oneMtelefonoR = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Busqueda = New System.Windows.Forms.Button()
+        Me.Telefonos = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'Label1
@@ -59,12 +58,12 @@ Partial Class Persona
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Nombre"
         '
-        'NombreP
+        'NombrePR
         '
-        Me.NombreP.Location = New System.Drawing.Point(33, 88)
-        Me.NombreP.Name = "NombreP"
-        Me.NombreP.Size = New System.Drawing.Size(180, 20)
-        Me.NombreP.TabIndex = 7
+        Me.NombrePR.Location = New System.Drawing.Point(33, 88)
+        Me.NombrePR.Name = "NombrePR"
+        Me.NombrePR.Size = New System.Drawing.Size(180, 20)
+        Me.NombrePR.TabIndex = 7
         '
         'Registro
         '
@@ -75,12 +74,12 @@ Partial Class Persona
         Me.Registro.Text = "Registro"
         Me.Registro.UseVisualStyleBackColor = True
         '
-        'DireccionP
+        'DireccionPR
         '
-        Me.DireccionP.Location = New System.Drawing.Point(33, 127)
-        Me.DireccionP.Name = "DireccionP"
-        Me.DireccionP.Size = New System.Drawing.Size(180, 20)
-        Me.DireccionP.TabIndex = 14
+        Me.DireccionPR.Location = New System.Drawing.Point(33, 127)
+        Me.DireccionPR.Name = "DireccionPR"
+        Me.DireccionPR.Size = New System.Drawing.Size(180, 20)
+        Me.DireccionPR.TabIndex = 14
         '
         'Label3
         '
@@ -90,12 +89,12 @@ Partial Class Persona
         Me.Label3.Size = New System.Drawing.Size(0, 13)
         Me.Label3.TabIndex = 13
         '
-        'CiP
+        'CiPR
         '
-        Me.CiP.Location = New System.Drawing.Point(33, 166)
-        Me.CiP.Name = "CiP"
-        Me.CiP.Size = New System.Drawing.Size(180, 20)
-        Me.CiP.TabIndex = 18
+        Me.CiPR.Location = New System.Drawing.Point(33, 166)
+        Me.CiPR.Name = "CiPR"
+        Me.CiPR.Size = New System.Drawing.Size(180, 20)
+        Me.CiPR.TabIndex = 18
         '
         'Label5
         '
@@ -106,12 +105,12 @@ Partial Class Persona
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "CI"
         '
-        'TelefonoP
+        'TelefonoPR
         '
-        Me.TelefonoP.Location = New System.Drawing.Point(33, 205)
-        Me.TelefonoP.Name = "TelefonoP"
-        Me.TelefonoP.Size = New System.Drawing.Size(180, 20)
-        Me.TelefonoP.TabIndex = 24
+        Me.TelefonoPR.Location = New System.Drawing.Point(33, 205)
+        Me.TelefonoPR.Name = "TelefonoPR"
+        Me.TelefonoPR.Size = New System.Drawing.Size(180, 20)
+        Me.TelefonoPR.TabIndex = 24
         '
         'Label9
         '
@@ -131,66 +130,50 @@ Partial Class Persona
         Me.Label10.TabIndex = 25
         Me.Label10.Text = "Direccion"
         '
-        'oneMtelefono
+        'oneMtelefonoR
         '
-        Me.oneMtelefono.Location = New System.Drawing.Point(219, 201)
-        Me.oneMtelefono.Name = "oneMtelefono"
-        Me.oneMtelefono.Size = New System.Drawing.Size(41, 27)
-        Me.oneMtelefono.TabIndex = 27
-        Me.oneMtelefono.Text = "+"
-        Me.oneMtelefono.UseVisualStyleBackColor = True
+        Me.oneMtelefonoR.Location = New System.Drawing.Point(219, 201)
+        Me.oneMtelefonoR.Name = "oneMtelefonoR"
+        Me.oneMtelefonoR.Size = New System.Drawing.Size(41, 27)
+        Me.oneMtelefonoR.TabIndex = 27
+        Me.oneMtelefonoR.Text = "+"
+        Me.oneMtelefonoR.UseVisualStyleBackColor = True
         '
         'ListView1
         '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Telefonos})
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(266, 88)
+        Me.ListView1.Location = New System.Drawing.Point(266, 72)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(152, 137)
+        Me.ListView1.Size = New System.Drawing.Size(152, 190)
         Me.ListView1.TabIndex = 29
         Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.List
+        Me.ListView1.View = System.Windows.Forms.View.Details
         '
-        'Label4
+        'Telefonos
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(263, 72)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(54, 13)
-        Me.Label4.TabIndex = 30
-        Me.Label4.Text = "Telefonos"
-        '
-        'Busqueda
-        '
-        Me.Busqueda.Location = New System.Drawing.Point(138, 240)
-        Me.Busqueda.Name = "Busqueda"
-        Me.Busqueda.Size = New System.Drawing.Size(75, 23)
-        Me.Busqueda.TabIndex = 31
-        Me.Busqueda.Text = "Buscar"
-        Me.Busqueda.UseVisualStyleBackColor = True
+        Me.Telefonos.Text = "Telefonos"
+        Me.Telefonos.Width = 146
         '
         'Persona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(453, 291)
-        Me.Controls.Add(Me.Busqueda)
-        Me.Controls.Add(Me.Label4)
+        Me.ClientSize = New System.Drawing.Size(452, 291)
         Me.Controls.Add(Me.ListView1)
-        Me.Controls.Add(Me.oneMtelefono)
+        Me.Controls.Add(Me.oneMtelefonoR)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.TelefonoP)
+        Me.Controls.Add(Me.TelefonoPR)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.CiP)
+        Me.Controls.Add(Me.CiPR)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.DireccionP)
+        Me.Controls.Add(Me.DireccionPR)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Registro)
-        Me.Controls.Add(Me.NombreP)
+        Me.Controls.Add(Me.NombrePR)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximumSize = New System.Drawing.Size(469, 330)
-        Me.MinimumSize = New System.Drawing.Size(469, 330)
         Me.Name = "Persona"
         Me.Text = "Persona"
         Me.ResumeLayout(False)
@@ -200,17 +183,16 @@ Partial Class Persona
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents NombreP As TextBox
+    Friend WithEvents NombrePR As TextBox
     Friend WithEvents Registro As Button
-    Friend WithEvents DireccionP As TextBox
+    Friend WithEvents DireccionPR As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents CiP As TextBox
+    Friend WithEvents CiPR As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TelefonoP As TextBox
+    Friend WithEvents TelefonoPR As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents oneMtelefono As Button
+    Friend WithEvents oneMtelefonoR As Button
     Friend WithEvents ListView1 As ListView
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Busqueda As Button
+    Friend WithEvents Telefonos As ColumnHeader
 End Class
