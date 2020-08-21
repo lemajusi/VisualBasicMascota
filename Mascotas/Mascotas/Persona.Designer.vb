@@ -172,23 +172,6 @@ Partial Class Persona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Me.ClientSize = New System.Drawing.Size(452, 291)
-=======
-        Me.ClientSize = New System.Drawing.Size(453, 291)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ClientSize = New System.Drawing.Size(453, 291)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ClientSize = New System.Drawing.Size(453, 291)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ClientSize = New System.Drawing.Size(453, 291)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
         Me.Controls.Add(Me.Busqueda)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ListView1)

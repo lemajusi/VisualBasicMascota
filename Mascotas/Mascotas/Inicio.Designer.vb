@@ -75,23 +75,7 @@ Partial Class Inicio
         '
         Me.ActualizarMascotaMenu.Name = "ActualizarMascotaMenu"
         Me.ActualizarMascotaMenu.Size = New System.Drawing.Size(180, 22)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Me.ActualizarMascotaMenu.Text = "Actualizar"
-=======
-        Me.ActualizarMascotaMenu.Text = "Buscar y Actualizar"
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ActualizarMascotaMenu.Text = "Buscar y Actualizar"
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ActualizarMascotaMenu.Text = "Buscar y Actualizar"
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ActualizarMascotaMenu.Text = "Buscar y Actualizar"
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
+
         '
         'BorrarMascotaMenu
         '
@@ -115,89 +99,25 @@ Partial Class Inicio
         'CrearPersonaMenu
         '
         Me.CrearPersonaMenu.Name = "CrearPersonaMenu"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Me.CrearPersonaMenu.Size = New System.Drawing.Size(180, 22)
-=======
-        Me.CrearPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.CrearPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.CrearPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.CrearPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
+
         Me.CrearPersonaMenu.Text = "Crear"
         '
         'ActualizarPersonaMenu
         '
         Me.ActualizarPersonaMenu.Name = "ActualizarPersonaMenu"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Me.ActualizarPersonaMenu.Size = New System.Drawing.Size(180, 22)
-=======
-        Me.ActualizarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ActualizarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ActualizarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ActualizarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
+
         Me.ActualizarPersonaMenu.Text = "Actualizar"
         '
         'BorrarPersonaMenu
         '
         Me.BorrarPersonaMenu.Name = "BorrarPersonaMenu"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Me.BorrarPersonaMenu.Size = New System.Drawing.Size(180, 22)
-=======
-        Me.BorrarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.BorrarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.BorrarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.BorrarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
+
         Me.BorrarPersonaMenu.Text = "Borrar"
         '
         'ListarPersonaMenu
         '
         Me.ListarPersonaMenu.Name = "ListarPersonaMenu"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Me.ListarPersonaMenu.Size = New System.Drawing.Size(180, 22)
-=======
-        Me.ListarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ListarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ListarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
-=======
-        Me.ListarPersonaMenu.Size = New System.Drawing.Size(126, 22)
->>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
+
         Me.ListarPersonaMenu.Text = "Listar"
         '
         'Inicio
