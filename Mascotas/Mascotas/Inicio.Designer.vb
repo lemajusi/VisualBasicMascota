@@ -76,6 +76,7 @@ Partial Class Inicio
         Me.ActualizarMascotaMenu.Name = "ActualizarMascotaMenu"
         Me.ActualizarMascotaMenu.Size = New System.Drawing.Size(180, 22)
 
+        Me.ActualizarMascotaMenu.Text = "Buscar y Actualizar"
         '
         'BorrarMascotaMenu
         '
@@ -100,11 +101,15 @@ Partial Class Inicio
         '
         Me.CrearPersonaMenu.Name = "CrearPersonaMenu"
 
+        Me.CrearPersonaMenu.Size = New System.Drawing.Size(126, 22)
+
         Me.CrearPersonaMenu.Text = "Crear"
         '
         'ActualizarPersonaMenu
         '
         Me.ActualizarPersonaMenu.Name = "ActualizarPersonaMenu"
+
+        Me.ActualizarPersonaMenu.Size = New System.Drawing.Size(126, 22)
 
         Me.ActualizarPersonaMenu.Text = "Actualizar"
         '
@@ -112,11 +117,15 @@ Partial Class Inicio
         '
         Me.BorrarPersonaMenu.Name = "BorrarPersonaMenu"
 
+        Me.BorrarPersonaMenu.Size = New System.Drawing.Size(126, 22)
+
         Me.BorrarPersonaMenu.Text = "Borrar"
         '
         'ListarPersonaMenu
         '
         Me.ListarPersonaMenu.Name = "ListarPersonaMenu"
+
+        Me.ListarPersonaMenu.Size = New System.Drawing.Size(126, 22)
 
         Me.ListarPersonaMenu.Text = "Listar"
         '

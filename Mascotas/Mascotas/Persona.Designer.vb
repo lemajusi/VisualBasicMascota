@@ -172,6 +172,9 @@ Partial Class Persona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+
+        Me.ClientSize = New System.Drawing.Size(453, 291)
+
         Me.Controls.Add(Me.Busqueda)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ListView1)
