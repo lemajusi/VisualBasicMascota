@@ -172,7 +172,7 @@ Partial Class Persona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(452, 291)
+        Me.ClientSize = New System.Drawing.Size(453, 291)
         Me.Controls.Add(Me.Busqueda)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ListView1)
@@ -189,6 +189,8 @@ Partial Class Persona
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximumSize = New System.Drawing.Size(469, 330)
+        Me.MinimumSize = New System.Drawing.Size(469, 330)
         Me.Name = "Persona"
         Me.Text = "Persona"
         Me.ResumeLayout(False)

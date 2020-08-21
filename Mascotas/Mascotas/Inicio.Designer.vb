@@ -68,25 +68,25 @@ Partial Class Inicio
         'CrearMascotaMenu
         '
         Me.CrearMascotaMenu.Name = "CrearMascotaMenu"
-        Me.CrearMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.CrearMascotaMenu.Size = New System.Drawing.Size(126, 22)
         Me.CrearMascotaMenu.Text = "Crear"
         '
         'ActualizarMascotaMenu
         '
         Me.ActualizarMascotaMenu.Name = "ActualizarMascotaMenu"
         Me.ActualizarMascotaMenu.Size = New System.Drawing.Size(180, 22)
-        Me.ActualizarMascotaMenu.Text = "Actualizar"
+        Me.ActualizarMascotaMenu.Text = "Buscar y Actualizar"
         '
         'BorrarMascotaMenu
         '
         Me.BorrarMascotaMenu.Name = "BorrarMascotaMenu"
-        Me.BorrarMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.BorrarMascotaMenu.Size = New System.Drawing.Size(126, 22)
         Me.BorrarMascotaMenu.Text = "Borrar"
         '
         'ListarMascotaMenu
         '
         Me.ListarMascotaMenu.Name = "ListarMascotaMenu"
-        Me.ListarMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.ListarMascotaMenu.Size = New System.Drawing.Size(126, 22)
         Me.ListarMascotaMenu.Text = "Listar"
         '
         'PersonaMenu
@@ -99,25 +99,25 @@ Partial Class Inicio
         'CrearPersonaMenu
         '
         Me.CrearPersonaMenu.Name = "CrearPersonaMenu"
-        Me.CrearPersonaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.CrearPersonaMenu.Size = New System.Drawing.Size(126, 22)
         Me.CrearPersonaMenu.Text = "Crear"
         '
         'ActualizarPersonaMenu
         '
         Me.ActualizarPersonaMenu.Name = "ActualizarPersonaMenu"
-        Me.ActualizarPersonaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.ActualizarPersonaMenu.Size = New System.Drawing.Size(126, 22)
         Me.ActualizarPersonaMenu.Text = "Actualizar"
         '
         'BorrarPersonaMenu
         '
         Me.BorrarPersonaMenu.Name = "BorrarPersonaMenu"
-        Me.BorrarPersonaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.BorrarPersonaMenu.Size = New System.Drawing.Size(126, 22)
         Me.BorrarPersonaMenu.Text = "Borrar"
         '
         'ListarPersonaMenu
         '
         Me.ListarPersonaMenu.Name = "ListarPersonaMenu"
-        Me.ListarPersonaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.ListarPersonaMenu.Size = New System.Drawing.Size(126, 22)
         Me.ListarPersonaMenu.Text = "Listar"
         '
         'Inicio
