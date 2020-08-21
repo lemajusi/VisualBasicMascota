@@ -107,12 +107,15 @@
     <Compile Include="Entidades\ClassPersona.vb" />
     <Compile Include="Entidades\ClassMascota.vb" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
 =======
 >>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
     <Compile Include="Logica\LogicaMascota.vb" />
@@ -158,9 +161,12 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
 =======
 >>>>>>> parent of ca6b5f6... Merge branch 'master' of https://github.com/lemajusi/VisualBasicMascota
     <EmbeddedResource Include="Persona.resx">
