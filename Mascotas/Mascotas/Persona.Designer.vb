@@ -38,13 +38,17 @@ Partial Class Persona
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Busqueda = New System.Windows.Forms.Button()
+        Me.NotOK = New System.Windows.Forms.PictureBox()
+        Me.Ok = New System.Windows.Forms.PictureBox()
+        CType(Me.NotOK, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ok, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(82, 27)
+        Me.Label1.Location = New System.Drawing.Point(167, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(124, 31)
         Me.Label1.TabIndex = 0
@@ -168,13 +172,35 @@ Partial Class Persona
         Me.Busqueda.Text = "Buscar"
         Me.Busqueda.UseVisualStyleBackColor = True
         '
+        'NotOK
+        '
+        Me.NotOK.Image = CType(resources.GetObject("NotOK.Image"), System.Drawing.Image)
+        Me.NotOK.Location = New System.Drawing.Point(219, 166)
+        Me.NotOK.Name = "NotOK"
+        Me.NotOK.Size = New System.Drawing.Size(20, 20)
+        Me.NotOK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.NotOK.TabIndex = 32
+        Me.NotOK.TabStop = False
+        Me.NotOK.Visible = False
+        '
+        'Ok
+        '
+        Me.Ok.Image = CType(resources.GetObject("Ok.Image"), System.Drawing.Image)
+        Me.Ok.Location = New System.Drawing.Point(219, 166)
+        Me.Ok.Name = "Ok"
+        Me.Ok.Size = New System.Drawing.Size(20, 20)
+        Me.Ok.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Ok.TabIndex = 33
+        Me.Ok.TabStop = False
+        Me.Ok.Visible = False
+        '
         'Persona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-
         Me.ClientSize = New System.Drawing.Size(453, 291)
-
+        Me.Controls.Add(Me.Ok)
+        Me.Controls.Add(Me.NotOK)
         Me.Controls.Add(Me.Busqueda)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ListView1)
@@ -195,6 +221,8 @@ Partial Class Persona
         Me.MinimumSize = New System.Drawing.Size(469, 330)
         Me.Name = "Persona"
         Me.Text = "Persona"
+        CType(Me.NotOK, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ok, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -215,4 +243,6 @@ Partial Class Persona
     Friend WithEvents ListView1 As ListView
     Friend WithEvents Label4 As Label
     Friend WithEvents Busqueda As Button
+    Friend WithEvents NotOK As PictureBox
+    Friend WithEvents Ok As PictureBox
 End Class

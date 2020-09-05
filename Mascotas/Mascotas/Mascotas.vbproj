@@ -106,6 +106,18 @@
   <ItemGroup>
     <Compile Include="Entidades\ClassPersona.vb" />
     <Compile Include="Entidades\ClassMascota.vb" />
+    <Compile Include="Buscar y Actualizar.Designer.vb">
+      <DependentUpon>Buscar y Actualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar y Actualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Logica\LogicaMascota.vb" />
     <Compile Include="Logica\LogicaPersona.vb" />
     <Compile Include="Persistencia\MascotaController.vb" />
@@ -148,6 +160,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Buscar y Actualizar.resx">
+      <DependentUpon>Buscar y Actualizar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Persona.resx">
       <DependentUpon>Persona.vb</DependentUpon>
     </EmbeddedResource>

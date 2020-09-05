@@ -39,8 +39,35 @@
             conection_Npg.close
         End Try
     End Sub
-    Public Function chequearCI(ci As Integer) As ClassPersona
+    Public Function chequearCI(ci As Integer)
+        Try
+            Dim conexion As New Conextion
+            Dim cmd = New Npgsql.NpgsqlCommand
+            conection_Npg = conexion.AbrirConextion
+            cmd.Connection = conection_Npg
 
+            Dim cadenadecomandos = "select * from persona where ci = @ci"
+
+            cmd.CommandText = cadenadecomandos
+            cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = ci
+            Dim Lector As Npgsql.NpgsqlDataReader = cmd.ExecuteReader
+            Dim cedula As Integer
+            Dim a As Boolean
+            If Lector.Read() Then
+                cedula = Convert.ToInt32(Lector(0).ToString)
+            End If
+            If cedula = ci Then
+                a = False
+                Return a
+            Else
+                a = True
+                Return a
+            End If
+        Catch ex As Exception
+            Throw ex
+        Finally
+            conection_Npg.close
+        End Try
     End Function
     Public Function buscarPersona(ci As Integer) As ClassPersona
         Try

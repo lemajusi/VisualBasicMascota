@@ -18,7 +18,14 @@
             newPersona.telefono = Ltelefono
             'llamar logica'
             Dim logica = New LogicaPersona
-            logica.altaPersona(newPersona)
+            Dim a As Boolean
+            a = logica.chequearCi(ci)
+            If a = True Then
+                logica.altaPersona(newPersona)
+                Ok.Visible = True
+            Else
+                NotOK.Visible = True
+            End If
         Catch ex As Exception
             Throw ex
         End Try
@@ -66,5 +73,8 @@
         End Try
     End Sub
 
-
+    Private Sub Registro_CursorChanged(sender As Object, e As EventArgs) Handles Registro.CursorChanged
+        Ok.Visible = False
+        NotOK.Visible = False
+    End Sub
 End Class
