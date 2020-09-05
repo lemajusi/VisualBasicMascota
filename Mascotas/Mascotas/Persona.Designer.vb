@@ -34,14 +34,15 @@ Partial Class Persona
         Me.TelefonoP = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.oneMtelefono = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Busqueda = New System.Windows.Forms.Button()
         Me.NotOK = New System.Windows.Forms.PictureBox()
         Me.Ok = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.NotOK, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Ok, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -135,19 +136,10 @@ Partial Class Persona
         Me.Label10.TabIndex = 25
         Me.Label10.Text = "Direccion"
         '
-        'oneMtelefono
-        '
-        Me.oneMtelefono.Location = New System.Drawing.Point(219, 201)
-        Me.oneMtelefono.Name = "oneMtelefono"
-        Me.oneMtelefono.Size = New System.Drawing.Size(41, 27)
-        Me.oneMtelefono.TabIndex = 27
-        Me.oneMtelefono.Text = "+"
-        Me.oneMtelefono.UseVisualStyleBackColor = True
-        '
         'ListView1
         '
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(266, 88)
+        Me.ListView1.Location = New System.Drawing.Point(268, 88)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(152, 137)
         Me.ListView1.TabIndex = 29
@@ -157,7 +149,7 @@ Partial Class Persona
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(263, 72)
+        Me.Label4.Location = New System.Drawing.Point(265, 72)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(54, 13)
         Me.Label4.TabIndex = 30
@@ -186,7 +178,7 @@ Partial Class Persona
         'Ok
         '
         Me.Ok.Image = CType(resources.GetObject("Ok.Image"), System.Drawing.Image)
-        Me.Ok.Location = New System.Drawing.Point(219, 166)
+        Me.Ok.Location = New System.Drawing.Point(112, 240)
         Me.Ok.Name = "Ok"
         Me.Ok.Size = New System.Drawing.Size(20, 20)
         Me.Ok.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -194,17 +186,27 @@ Partial Class Persona
         Me.Ok.TabStop = False
         Me.Ok.Visible = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(228, 201)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(26, 26)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 34
+        Me.PictureBox1.TabStop = False
+        '
         'Persona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(453, 291)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Ok)
         Me.Controls.Add(Me.NotOK)
         Me.Controls.Add(Me.Busqueda)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ListView1)
-        Me.Controls.Add(Me.oneMtelefono)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.TelefonoP)
         Me.Controls.Add(Me.Label9)
@@ -223,6 +225,7 @@ Partial Class Persona
         Me.Text = "Persona"
         CType(Me.NotOK, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Ok, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -239,10 +242,10 @@ Partial Class Persona
     Friend WithEvents TelefonoP As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents oneMtelefono As Button
     Friend WithEvents ListView1 As ListView
     Friend WithEvents Label4 As Label
     Friend WithEvents Busqueda As Button
     Friend WithEvents NotOK As PictureBox
     Friend WithEvents Ok As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

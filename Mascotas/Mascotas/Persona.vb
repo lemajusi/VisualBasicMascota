@@ -10,7 +10,6 @@
             dir = DireccionP.Text
             ci = CiP.Text
 
-
             Dim newPersona = New ClassPersona()
             newPersona.cedula = ci
             newPersona.nombre = nombre
@@ -23,6 +22,10 @@
             If a = True Then
                 logica.altaPersona(newPersona)
                 Ok.Visible = True
+                NombreP.Text = ""
+                DireccionP.Text = ""
+                CiP.Text = ""
+                ListView1.Clear()
             Else
                 NotOK.Visible = True
             End If
@@ -30,12 +33,7 @@
             Throw ex
         End Try
     End Sub
-
-    Private Sub CiP_TextChanged(sender As Object, e As EventArgs) Handles CiP.TextChanged
-
-    End Sub
-
-    Private Sub oneMtelefono_Click(sender As Object, e As EventArgs) Handles oneMtelefono.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Dim telefono As Integer
         Try
             telefono = TelefonoP.Text
@@ -73,8 +71,21 @@
         End Try
     End Sub
 
-    Private Sub Registro_CursorChanged(sender As Object, e As EventArgs) Handles Registro.CursorChanged
+    Private Sub TelefonoP_Click(sender As Object, e As EventArgs) Handles TelefonoP.Click
+        TelefonoP.Text = ""
+        Ok.Visible = False
+    End Sub
+
+    Private Sub CiP_Click(sender As Object, e As EventArgs) Handles CiP.Click
         Ok.Visible = False
         NotOK.Visible = False
+    End Sub
+
+    Private Sub DireccionP_Click(sender As Object, e As EventArgs) Handles DireccionP.Click
+        Ok.Visible = False
+    End Sub
+
+    Private Sub NombreP_Click(sender As Object, e As EventArgs) Handles NombreP.Click
+        Ok.Visible = False
     End Sub
 End Class
