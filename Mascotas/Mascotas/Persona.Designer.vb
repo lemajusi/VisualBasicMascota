@@ -49,7 +49,7 @@ Partial Class Persona
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(167, 21)
+        Me.Label1.Location = New System.Drawing.Point(168, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(124, 31)
         Me.Label1.TabIndex = 0
@@ -189,9 +189,9 @@ Partial Class Persona
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(228, 201)
+        Me.PictureBox1.Location = New System.Drawing.Point(232, 205)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(26, 26)
+        Me.PictureBox1.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 34
         Me.PictureBox1.TabStop = False

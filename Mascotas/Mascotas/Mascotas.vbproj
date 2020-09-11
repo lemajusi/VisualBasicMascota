@@ -106,10 +106,10 @@
   <ItemGroup>
     <Compile Include="Entidades\ClassPersona.vb" />
     <Compile Include="Entidades\ClassMascota.vb" />
-    <Compile Include="Buscar y Actualizar.Designer.vb">
-      <DependentUpon>Buscar y Actualizar.vb</DependentUpon>
+    <Compile Include="Buscar y ActualizarP.Designer.vb">
+      <DependentUpon>Buscar y ActualizarP.vb</DependentUpon>
     </Compile>
-    <Compile Include="Buscar y Actualizar.vb">
+    <Compile Include="Buscar y ActualizarP.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form2.Designer.vb">
@@ -160,8 +160,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Buscar y Actualizar.resx">
-      <DependentUpon>Buscar y Actualizar.vb</DependentUpon>
+    <EmbeddedResource Include="Buscar y ActualizarP.resx">
+      <DependentUpon>Buscar y ActualizarP.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Persona.resx">
       <DependentUpon>Persona.vb</DependentUpon>

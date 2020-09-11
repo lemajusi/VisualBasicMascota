@@ -1,7 +1,7 @@
 ﻿Public Class PersonaController
-    Dim conection_Npg = New Npgsql.NpgsqlConnection
-    Dim ListaTelefonos = New List(Of Integer)
-    Public Sub altaPersona(personaUser As ClassPersona)
+    Private Dim conection_Npg = New Npgsql.NpgsqlConnection
+    Private ListaTelefonos = New List(Of Integer)
+    Private Sub altaPersona(personaUser As ClassPersona)
         Try
             Dim conection = New Conextion
             conection_Npg = conection.AbrirConextion
@@ -22,7 +22,7 @@
             conection_Npg.close
         End Try
     End Sub
-    Public Sub altaTelefono(cedula As Integer, telefono As Integer)
+    Private Sub altaTelefono(cedula As Integer, telefono As Integer)
         Try
             Dim conection = New Conextion
             conection_Npg = conection.AbrirConextion
@@ -39,7 +39,7 @@
             conection_Npg.close
         End Try
     End Sub
-    Public Function chequearCI(ci As Integer)
+    Private Function chequearCI(ci As Integer)
         Try
             Dim conexion As New Conextion
             Dim cmd = New Npgsql.NpgsqlCommand
@@ -69,7 +69,7 @@
             conection_Npg.close
         End Try
     End Function
-    Public Function buscarPersona(ci As Integer) As ClassPersona
+    Private Function buscarPersona(ci As Integer) As ClassPersona
         Try
             Dim Persona As New ClassPersona
             Dim ClaseSnl As New Conextion
@@ -100,7 +100,7 @@
             conection_Npg.close
         End Try
     End Function
-    Public Function buscarTelefonos(ci As Integer) As ClassPersona
+    Private Function buscarTelefonos(ci As Integer) As ClassPersona
         Try
             Dim Persona As New ClassPersona
             Dim ClaseSnl As New Conextion
@@ -129,4 +129,5 @@
             conection_Npg.close
         End Try
     End Function
+    p
 End Class
