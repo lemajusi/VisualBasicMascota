@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Persona
+Partial Class RegistroPersona
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,7 @@ Partial Class Persona
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Persona))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistroPersona))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.NombreP = New System.Windows.Forms.TextBox()
@@ -196,7 +196,7 @@ Partial Class Persona
         Me.PictureBox1.TabIndex = 34
         Me.PictureBox1.TabStop = False
         '
-        'Persona
+        'RegistroPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -221,7 +221,7 @@ Partial Class Persona
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximumSize = New System.Drawing.Size(469, 330)
         Me.MinimumSize = New System.Drawing.Size(469, 330)
-        Me.Name = "Persona"
+        Me.Name = "RegistroPersona"
         Me.Text = "Persona"
         CType(Me.NotOK, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Ok, System.ComponentModel.ISupportInitialize).EndInit()

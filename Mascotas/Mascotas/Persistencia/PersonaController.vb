@@ -1,10 +1,10 @@
 ﻿Public Class PersonaController
     Private Dim conection_Npg = New Npgsql.NpgsqlConnection
     Private ListaTelefonos = New List(Of Integer)
-    Private Sub altaPersona(personaUser As ClassPersona)
+    Sub altaPersona(personaUser As ClassPersona)
         Try
-            Dim conection = New Conextion
-            conection_Npg = conection.AbrirConextion
+            Dim Conn = New Conextion
+            conection_Npg = Conn.AbrirConextion
             Dim CadenaDeComandos = "insert into persona (ci, nombre, direccion) values (@ci, @nombre, @direccion)"
             Dim cmd = New Npgsql.NpgsqlCommand(CadenaDeComandos)
             cmd.Connection = conection_Npg
@@ -22,10 +22,10 @@
             conection_Npg.close
         End Try
     End Sub
-    Private Sub altaTelefono(cedula As Integer, telefono As Integer)
+    Sub altaTelefono(cedula As Integer, telefono As Integer)
         Try
-            Dim conection = New Conextion
-            conection_Npg = conection.AbrirConextion
+            Dim Conn = New Conextion
+            conection_Npg = Conn.AbrirConextion
             Dim CadenaDeComandos = "insert into Telefono (cip,telefono) values (@ciP,@telefono);"
             Dim cmd = New Npgsql.NpgsqlCommand(CadenaDeComandos)
             cmd.Connection = conection_Npg
@@ -39,11 +39,11 @@
             conection_Npg.close
         End Try
     End Sub
-    Private Function chequearCI(ci As Integer)
+    Function chequearCI(ci As Integer)
         Try
-            Dim conexion As New Conextion
+            Dim Conn As New Conextion
             Dim cmd = New Npgsql.NpgsqlCommand
-            conection_Npg = conexion.AbrirConextion
+            conection_Npg = Conn.AbrirConextion
             cmd.Connection = conection_Npg
 
             Dim cadenadecomandos = "select * from persona where ci = @ci"
@@ -69,11 +69,11 @@
             conection_Npg.close
         End Try
     End Function
-    Private Function buscarPersona(ci As Integer) As ClassPersona
+    Function buscarPersona(ci As Integer) As ClassPersona
         Try
             Dim Persona As New ClassPersona
-            Dim ClaseSnl As New Conextion
-            conection_Npg = ClaseSnl.AbrirConextion
+            Dim Conn As New Conextion
+            conection_Npg = Conn.AbrirConextion
             Dim cmd = New Npgsql.NpgsqlCommand
             cmd.Connection = conection_Npg
 
@@ -100,11 +100,11 @@
             conection_Npg.close
         End Try
     End Function
-    Private Function buscarTelefonos(ci As Integer) As ClassPersona
+    Function buscarTelefonos(ci As Integer) As ClassPersona
         Try
             Dim Persona As New ClassPersona
-            Dim ClaseSnl As New Conextion
-            conection_Npg = ClaseSnl.AbrirConextion
+            Dim Conn As New Conextion
+            conection_Npg = Conn.AbrirConextion
             Dim cmd = New Npgsql.NpgsqlCommand
             cmd.Connection = conection_Npg
 
@@ -129,5 +129,47 @@
             conection_Npg.close
         End Try
     End Function
-    p
+    Function TodasLasPersonas() As List(Of ClassPersona)
+        Try
+            Dim array As New List(Of ClassPersona)
+            Dim Conn As New Conextion
+            conection_Npg = Conn.AbrirConextion
+            Dim cmd As New Npgsql.NpgsqlCommand
+            cmd.Connection = conection_Npg
+            Dim cadenaDeComandos = "select * from persona"
+            cmd.CommandText = cadenaDeComandos
+            Dim Lector = cmd.ExecuteReader
+            While Lector.Read
+                Dim Persona = New ClassPersona
+                Persona.cedula = Convert.ToInt32(Lector(0).ToString)
+                Persona.nombre = Lector(1).ToString
+                Persona.direccion = Lector(2).ToString
+                array.Add(Persona)
+            End While
+            Return array
+        Catch ex As Exception
+            Throw ex
+        Finally
+            conection_Npg.close
+        End Try
+    End Function
+    Function BorrarPersona(ci As Integer) As ClassPersona
+        Try
+            Dim Persona As New ClassPersona
+            Dim Conn = New Conextion
+            conection_Npg = Conn.AbrirConextion
+            Dim cmd = New Npgsql.NpgsqlCommand
+            cmd.Connection = conection_Npg
+            Persona.cedula = ci
+
+            Dim cadenaDeComandos = "delete from persona where ci = @ci"
+            cmd.CommandText = cadenaDeComandos
+            cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = Persona.cedula
+            Dim Lector = cmd.ExecuteReader
+        Catch ex As Exception
+            Throw ex
+        Finally
+            conection_Npg.close
+        End Try
+    End Function
 End Class

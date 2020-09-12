@@ -1,4 +1,4 @@
-﻿Public Class Mascota
+﻿Public Class RegistroMascota
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim nombreM As String
         Dim añoNacM As Integer
@@ -17,7 +17,7 @@
         logica.altaMascota(newMascota)
     End Sub
 
-    Private Sub Mascota_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub RegistroMascota_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

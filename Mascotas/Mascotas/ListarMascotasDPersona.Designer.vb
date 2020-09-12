@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form2
+Partial Class ListarMascotasDPersona
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -25,6 +25,6 @@ Partial Class Form2
         components = New System.ComponentModel.Container
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form2"
+        Me.Text = "ListarMascotasDPersona"
     End Sub
 End Class

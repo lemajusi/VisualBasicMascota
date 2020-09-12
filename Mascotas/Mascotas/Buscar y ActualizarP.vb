@@ -5,7 +5,7 @@
 
             Dim cedula As Integer
             cedula = BACiP.Text
-            Dim Persona As New ClassPersona
+            Dim Persona As ClassPersona
             Dim Telefonos As ClassPersona
             Dim logica As New LogicaPersona
             BANombreP.Text = ""
@@ -52,6 +52,11 @@
     End Sub
 
     Private Sub Modificar1Telefono_Click(sender As Object, e As EventArgs) Handles Modificar1Telefono.Click
-        Telefono.Text = "gola"
+        BATelefonoP.Text = SltNum.Text
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
     End Sub
 End Class

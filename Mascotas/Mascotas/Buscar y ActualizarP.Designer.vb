@@ -28,8 +28,8 @@ Partial Class BuscaryActualizar
         Me.Actualizar = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ListView2 = New System.Windows.Forms.ListView()
-        Me.SL = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Telefono = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ListVSelect = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ListVTelefono = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label10 = New System.Windows.Forms.Label()
         Me.BATelefonoP = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -41,7 +41,7 @@ Partial Class BuscaryActualizar
         Me.BANombreP = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.SLBU = New System.Windows.Forms.TextBox()
+        Me.SltNum = New System.Windows.Forms.TextBox()
         Me.BotonModificar = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Modificar1Telefono = New System.Windows.Forms.PictureBox()
@@ -54,7 +54,7 @@ Partial Class BuscaryActualizar
         'Ok
         '
         Me.Ok.Image = CType(resources.GetObject("Ok.Image"), System.Drawing.Image)
-        Me.Ok.Location = New System.Drawing.Point(240, 254)
+        Me.Ok.Location = New System.Drawing.Point(229, 254)
         Me.Ok.Name = "Ok"
         Me.Ok.Size = New System.Drawing.Size(23, 23)
         Me.Ok.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -65,7 +65,7 @@ Partial Class BuscaryActualizar
         'NotOK
         '
         Me.NotOK.Image = CType(resources.GetObject("NotOK.Image"), System.Drawing.Image)
-        Me.NotOK.Location = New System.Drawing.Point(240, 180)
+        Me.NotOK.Location = New System.Drawing.Point(229, 180)
         Me.NotOK.Name = "NotOK"
         Me.NotOK.Size = New System.Drawing.Size(20, 20)
         Me.NotOK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -75,7 +75,7 @@ Partial Class BuscaryActualizar
         '
         'Actualizar
         '
-        Me.Actualizar.Location = New System.Drawing.Point(159, 254)
+        Me.Actualizar.Location = New System.Drawing.Point(148, 254)
         Me.Actualizar.Name = "Actualizar"
         Me.Actualizar.Size = New System.Drawing.Size(75, 23)
         Me.Actualizar.TabIndex = 48
@@ -85,7 +85,7 @@ Partial Class BuscaryActualizar
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(286, 86)
+        Me.Label4.Location = New System.Drawing.Point(275, 86)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(54, 13)
         Me.Label4.TabIndex = 47
@@ -93,29 +93,29 @@ Partial Class BuscaryActualizar
         '
         'ListView2
         '
-        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.SL, Me.Telefono})
+        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ListVSelect, Me.ListVTelefono})
         Me.ListView2.HideSelection = False
-        Me.ListView2.Location = New System.Drawing.Point(289, 102)
+        Me.ListView2.Location = New System.Drawing.Point(278, 102)
         Me.ListView2.Name = "ListView2"
         Me.ListView2.Size = New System.Drawing.Size(152, 139)
         Me.ListView2.TabIndex = 46
         Me.ListView2.UseCompatibleStateImageBehavior = False
         Me.ListView2.View = System.Windows.Forms.View.Details
         '
-        'SL
+        'ListVSelect
         '
-        Me.SL.Text = "SL"
-        Me.SL.Width = 36
+        Me.ListVSelect.Text = "Slt"
+        Me.ListVSelect.Width = 36
         '
-        'Telefono
+        'ListVTelefono
         '
-        Me.Telefono.Text = "Telefono"
-        Me.Telefono.Width = 108
+        Me.ListVTelefono.Text = "Telefono"
+        Me.ListVTelefono.Width = 108
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(51, 125)
+        Me.Label10.Location = New System.Drawing.Point(40, 125)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(52, 13)
         Me.Label10.TabIndex = 45
@@ -123,7 +123,7 @@ Partial Class BuscaryActualizar
         '
         'BATelefonoP
         '
-        Me.BATelefonoP.Location = New System.Drawing.Point(54, 219)
+        Me.BATelefonoP.Location = New System.Drawing.Point(43, 219)
         Me.BATelefonoP.Name = "BATelefonoP"
         Me.BATelefonoP.Size = New System.Drawing.Size(180, 20)
         Me.BATelefonoP.TabIndex = 44
@@ -131,7 +131,7 @@ Partial Class BuscaryActualizar
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(51, 203)
+        Me.Label9.Location = New System.Drawing.Point(40, 203)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(49, 13)
         Me.Label9.TabIndex = 43
@@ -139,7 +139,7 @@ Partial Class BuscaryActualizar
         '
         'BACiP
         '
-        Me.BACiP.Location = New System.Drawing.Point(54, 180)
+        Me.BACiP.Location = New System.Drawing.Point(43, 180)
         Me.BACiP.Name = "BACiP"
         Me.BACiP.Size = New System.Drawing.Size(180, 20)
         Me.BACiP.TabIndex = 42
@@ -147,7 +147,7 @@ Partial Class BuscaryActualizar
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(51, 164)
+        Me.Label5.Location = New System.Drawing.Point(40, 164)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(17, 13)
         Me.Label5.TabIndex = 41
@@ -155,7 +155,7 @@ Partial Class BuscaryActualizar
         '
         'BADireccionP
         '
-        Me.BADireccionP.Location = New System.Drawing.Point(54, 141)
+        Me.BADireccionP.Location = New System.Drawing.Point(43, 141)
         Me.BADireccionP.Name = "BADireccionP"
         Me.BADireccionP.Size = New System.Drawing.Size(180, 20)
         Me.BADireccionP.TabIndex = 40
@@ -163,14 +163,14 @@ Partial Class BuscaryActualizar
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(51, 148)
+        Me.Label3.Location = New System.Drawing.Point(40, 148)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(0, 13)
         Me.Label3.TabIndex = 39
         '
         'Buscar
         '
-        Me.Buscar.Location = New System.Drawing.Point(54, 253)
+        Me.Buscar.Location = New System.Drawing.Point(43, 253)
         Me.Buscar.Name = "Buscar"
         Me.Buscar.Size = New System.Drawing.Size(75, 23)
         Me.Buscar.TabIndex = 38
@@ -179,7 +179,7 @@ Partial Class BuscaryActualizar
         '
         'BANombreP
         '
-        Me.BANombreP.Location = New System.Drawing.Point(54, 102)
+        Me.BANombreP.Location = New System.Drawing.Point(43, 102)
         Me.BANombreP.Name = "BANombreP"
         Me.BANombreP.Size = New System.Drawing.Size(180, 20)
         Me.BANombreP.TabIndex = 37
@@ -187,7 +187,7 @@ Partial Class BuscaryActualizar
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(51, 86)
+        Me.Label2.Location = New System.Drawing.Point(40, 86)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 36
@@ -197,23 +197,24 @@ Partial Class BuscaryActualizar
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(122, 36)
+        Me.Label1.Location = New System.Drawing.Point(111, 36)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(266, 31)
         Me.Label1.TabIndex = 35
         Me.Label1.Text = "Buscar y Actualizar"
         '
-        'SLBU
+        'SltNum
         '
-        Me.SLBU.Location = New System.Drawing.Point(314, 247)
-        Me.SLBU.Name = "SLBU"
-        Me.SLBU.Size = New System.Drawing.Size(26, 20)
-        Me.SLBU.TabIndex = 51
+        Me.SltNum.Location = New System.Drawing.Point(303, 247)
+        Me.SltNum.Name = "SltNum"
+        Me.SltNum.Size = New System.Drawing.Size(43, 20)
+        Me.SltNum.TabIndex = 51
+        Me.SltNum.Text = "SltNum"
         '
         'BotonModificar
         '
         Me.BotonModificar.Image = CType(resources.GetObject("BotonModificar.Image"), System.Drawing.Image)
-        Me.BotonModificar.Location = New System.Drawing.Point(253, 219)
+        Me.BotonModificar.Location = New System.Drawing.Point(242, 219)
         Me.BotonModificar.Name = "BotonModificar"
         Me.BotonModificar.Size = New System.Drawing.Size(19, 19)
         Me.BotonModificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -223,7 +224,7 @@ Partial Class BuscaryActualizar
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(153, 203)
+        Me.Label6.Location = New System.Drawing.Point(142, 203)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(20, 13)
         Me.Label6.TabIndex = 53
@@ -232,7 +233,7 @@ Partial Class BuscaryActualizar
         'Modificar1Telefono
         '
         Me.Modificar1Telefono.Image = CType(resources.GetObject("Modificar1Telefono.Image"), System.Drawing.Image)
-        Me.Modificar1Telefono.Location = New System.Drawing.Point(289, 247)
+        Me.Modificar1Telefono.Location = New System.Drawing.Point(278, 247)
         Me.Modificar1Telefono.Name = "Modificar1Telefono"
         Me.Modificar1Telefono.Size = New System.Drawing.Size(19, 20)
         Me.Modificar1Telefono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -243,11 +244,11 @@ Partial Class BuscaryActualizar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(494, 316)
+        Me.ClientSize = New System.Drawing.Size(471, 316)
         Me.Controls.Add(Me.Modificar1Telefono)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.BotonModificar)
-        Me.Controls.Add(Me.SLBU)
+        Me.Controls.Add(Me.SltNum)
         Me.Controls.Add(Me.Ok)
         Me.Controls.Add(Me.NotOK)
         Me.Controls.Add(Me.Actualizar)
@@ -265,6 +266,8 @@ Partial Class BuscaryActualizar
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximumSize = New System.Drawing.Size(487, 355)
+        Me.MinimumSize = New System.Drawing.Size(487, 355)
         Me.Name = "BuscaryActualizar"
         Me.Text = "Buscar y Acutualizar"
         CType(Me.Ok, System.ComponentModel.ISupportInitialize).EndInit()
@@ -280,8 +283,8 @@ Partial Class BuscaryActualizar
     Friend WithEvents Actualizar As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents ListView2 As ListView
-    Friend WithEvents SL As ColumnHeader
-    Friend WithEvents Telefono As ColumnHeader
+    Friend WithEvents ListVSelect As ColumnHeader
+    Friend WithEvents ListVTelefono As ColumnHeader
     Friend WithEvents Label10 As Label
     Friend WithEvents BATelefonoP As TextBox
     Friend WithEvents Label9 As Label
@@ -293,7 +296,7 @@ Partial Class BuscaryActualizar
     Friend WithEvents BANombreP As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents SLBU As TextBox
+    Friend WithEvents SltNum As TextBox
     Friend WithEvents BotonModificar As PictureBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Modificar1Telefono As PictureBox

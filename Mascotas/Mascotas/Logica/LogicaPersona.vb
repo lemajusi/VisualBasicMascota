@@ -15,4 +15,8 @@
         Dim persistencia = New PersonaController
         Return persistencia.buscarTelefonos(ci)
     End Function
+    Public Function TodasLasPersonas() As List(Of ClassPersona)
+        Dim persistencia = New PersonaController
+        Return persistencia.TodasLasPersonas
+    End Function
 End Class

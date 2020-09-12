@@ -110,9 +110,7 @@ C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\bin\
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\bin\Debug\System.ValueTuple.xml
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.vbprojAssemblyReference.cache
-C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.Persona.resources
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.Inicio.resources
-C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.Mascota.resources
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.Resources.resources
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.vbproj.GenerateResource.cache
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.vbproj.CoreCompileInputs.cache
@@ -121,3 +119,7 @@ C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.xml
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.pdb
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.BuscaryActualizar.resources
+C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.Form2.resources
+C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.RegistroPersona.resources
+C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.RegistroMascota.resources
+C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.ListarPersonas.resources

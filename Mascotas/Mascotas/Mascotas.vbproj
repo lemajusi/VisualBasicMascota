@@ -112,10 +112,22 @@
     <Compile Include="Buscar y ActualizarP.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="Buscar y ActualizarM.Designer.vb">
+      <DependentUpon>Buscar y ActualizarM.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="Buscar y ActualizarM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarMascotasDPersona.Designer.vb">
+      <DependentUpon>ListarMascotasDPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListarMascotasDPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarPersonas.Designer.vb">
+      <DependentUpon>ListarPersonas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListarPersonas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Logica\LogicaMascota.vb" />
@@ -123,11 +135,11 @@
     <Compile Include="Persistencia\MascotaController.vb" />
     <Compile Include="Persistencia\PersonaController.vb" />
     <Compile Include="Persistencia\Conextion.vb" />
-    <Compile Include="Persona.vb">
+    <Compile Include="RegistroPersona.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Persona.Designer.vb">
-      <DependentUpon>Persona.vb</DependentUpon>
+    <Compile Include="RegistroPersona.Designer.vb">
+      <DependentUpon>RegistroPersona.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inicio.Designer.vb">
@@ -136,10 +148,10 @@
     <Compile Include="Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mascota.Designer.vb">
-      <DependentUpon>Mascota.vb</DependentUpon>
+    <Compile Include="RegistroMascota.Designer.vb">
+      <DependentUpon>RegistroMascota.vb</DependentUpon>
     </Compile>
-    <Compile Include="Mascota.vb">
+    <Compile Include="RegistroMascota.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -160,17 +172,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Buscar y ActualizarM.resx">
+      <DependentUpon>Buscar y ActualizarM.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Buscar y ActualizarP.resx">
       <DependentUpon>Buscar y ActualizarP.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Persona.resx">
-      <DependentUpon>Persona.vb</DependentUpon>
+    <EmbeddedResource Include="ListarPersonas.resx">
+      <DependentUpon>ListarPersonas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroPersona.resx">
+      <DependentUpon>RegistroPersona.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mascota.resx">
-      <DependentUpon>Mascota.vb</DependentUpon>
+    <EmbeddedResource Include="RegistroMascota.resx">
+      <DependentUpon>RegistroMascota.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

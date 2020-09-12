@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Mascota
+Partial Class RegistroMascota
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,7 @@ Partial Class Mascota
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Mascota))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistroMascota))
         Me.AñoNacMas = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.NombreMas = New System.Windows.Forms.TextBox()
@@ -31,6 +31,11 @@ Partial Class Mascota
         Me.Button1 = New System.Windows.Forms.Button()
         Me.CedulaPer = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Ok = New System.Windows.Forms.PictureBox()
+        Me.Busqueda = New System.Windows.Forms.Button()
+        CType(Me.Ok, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'AñoNacMas
@@ -43,11 +48,11 @@ Partial Class Mascota
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(32, 150)
+        Me.Label6.Location = New System.Drawing.Point(30, 150)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(45, 13)
+        Me.Label6.Size = New System.Drawing.Size(97, 13)
         Me.Label6.TabIndex = 30
-        Me.Label6.Text = "añoNac"
+        Me.Label6.Text = "Año de Nacimiento"
         '
         'NombreMas
         '
@@ -61,9 +66,9 @@ Partial Class Mascota
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(30, 72)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(44, 13)
+        Me.Label4.Size = New System.Drawing.Size(114, 13)
         Me.Label4.TabIndex = 28
-        Me.Label4.Text = "Nombre"
+        Me.Label4.Text = "Nombre de la Mascota"
         '
         'Label1
         '
@@ -77,7 +82,7 @@ Partial Class Mascota
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(33, 200)
+        Me.Button1.Location = New System.Drawing.Point(33, 241)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 34
@@ -96,15 +101,57 @@ Partial Class Mascota
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(30, 111)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 13)
+        Me.Label2.Size = New System.Drawing.Size(92, 13)
         Me.Label2.TabIndex = 35
-        Me.Label2.Text = "CedulaP"
+        Me.Label2.Text = "Cedula del Dueño"
         '
-        'Mascota
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(30, 189)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(87, 13)
+        Me.Label3.TabIndex = 38
+        Me.Label3.Text = "Tipo de Mascota"
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Items.AddRange(New Object() {"Perro", "Gato", "Pez", "Conejo"})
+        Me.ListBox1.Location = New System.Drawing.Point(33, 205)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(167, 30)
+        Me.ListBox1.TabIndex = 39
+        '
+        'Ok
+        '
+        Me.Ok.Image = CType(resources.GetObject("Ok.Image"), System.Drawing.Image)
+        Me.Ok.Location = New System.Drawing.Point(114, 241)
+        Me.Ok.Name = "Ok"
+        Me.Ok.Size = New System.Drawing.Size(23, 23)
+        Me.Ok.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Ok.TabIndex = 41
+        Me.Ok.TabStop = False
+        Me.Ok.Visible = False
+        '
+        'Busqueda
+        '
+        Me.Busqueda.Location = New System.Drawing.Point(143, 241)
+        Me.Busqueda.Name = "Busqueda"
+        Me.Busqueda.Size = New System.Drawing.Size(75, 23)
+        Me.Busqueda.TabIndex = 40
+        Me.Busqueda.Text = "Buscar"
+        Me.Busqueda.UseVisualStyleBackColor = True
+        '
+        'RegistroMascota
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(245, 253)
+        Me.ClientSize = New System.Drawing.Size(380, 297)
+        Me.Controls.Add(Me.Ok)
+        Me.Controls.Add(Me.Busqueda)
+        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.CedulaPer)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
@@ -114,8 +161,9 @@ Partial Class Mascota
         Me.Controls.Add(Me.NombreMas)
         Me.Controls.Add(Me.Label4)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Mascota"
+        Me.Name = "RegistroMascota"
         Me.Text = "Mascota"
+        CType(Me.Ok, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -128,4 +176,8 @@ Partial Class Mascota
     Friend WithEvents Button1 As Button
     Friend WithEvents CedulaPer As TextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Ok As PictureBox
+    Friend WithEvents Busqueda As Button
 End Class

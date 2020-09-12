@@ -1,4 +1,4 @@
-﻿Public Class Persona
+﻿Public Class RegistroPersona
     Dim Ltelefono = New List(Of Integer)
     Private Sub Registro_Click(sender As Object, e As EventArgs) Handles Registro.Click
         Try
