@@ -7,7 +7,7 @@
     Private Sub BuscaryActualizarPersonaMenu_Click(sender As Object, e As EventArgs) Handles BuscaryActualizarPersonaMenu.Click
         BuscaryActualizar.ShowDialog()
     End Sub
-    Private Sub BorrarPersonaMenu_Click(sender As Object, e As EventArgs) Handles BorrarPersonaMenu.Click
+    Private Sub BorrarPersonaMenu_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -22,7 +22,7 @@
     Private Sub BuscaryActualizarMascotaMenu_Click(sender As Object, e As EventArgs) Handles BuscaryActualizarMascotaMenu.Click
 
     End Sub
-    Private Sub BorrarMascotaMenu_Click(sender As Object, e As EventArgs) Handles BorrarMascotaMenu.Click
+    Private Sub BorrarMascotaMenu_Click(sender As Object, e As EventArgs)
 
     End Sub
     Private Sub ListarMascotaMenu_Click(sender As Object, e As EventArgs) Handles ListarMascotaMenu.Click

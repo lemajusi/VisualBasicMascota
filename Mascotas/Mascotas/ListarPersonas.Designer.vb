@@ -29,9 +29,8 @@ Partial Class ListarPersonas
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ListView2 = New System.Windows.Forms.ListView()
         Me.Telefono = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ListView3 = New System.Windows.Forms.ListView()
-        Me.NombreMascota = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.AñoNacimiento = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.BorrarPersona = New System.Windows.Forms.Button()
+        Me.BorrarTelefono = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListView1
@@ -40,7 +39,8 @@ Partial Class ListarPersonas
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.LVCi, Me.LVNombre, Me.LVDireccion})
         Me.ListView1.FullRowSelect = True
         Me.ListView1.GridLines = True
-        Me.ListView1.Location = New System.Drawing.Point(45, 122)
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(30, 94)
         Me.ListView1.MultiSelect = False
         Me.ListView1.Name = "ListView1"
         Me.ListView1.ShowGroups = False
@@ -68,7 +68,7 @@ Partial Class ListarPersonas
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(214, 59)
+        Me.Label1.Location = New System.Drawing.Point(229, 44)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 13)
         Me.Label1.TabIndex = 1
@@ -77,8 +77,10 @@ Partial Class ListarPersonas
         'ListView2
         '
         Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Telefono})
+        Me.ListView2.FullRowSelect = True
+        Me.ListView2.GridLines = True
         Me.ListView2.HideSelection = False
-        Me.ListView2.Location = New System.Drawing.Point(417, 122)
+        Me.ListView2.Location = New System.Drawing.Point(402, 94)
         Me.ListView2.Name = "ListView2"
         Me.ListView2.Size = New System.Drawing.Size(121, 175)
         Me.ListView2.TabIndex = 2
@@ -90,33 +92,31 @@ Partial Class ListarPersonas
         Me.Telefono.Text = "Telefonos"
         Me.Telefono.Width = 117
         '
-        'ListView3
+        'BorrarPersona
         '
-        Me.ListView3.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.NombreMascota, Me.AñoNacimiento})
-        Me.ListView3.HideSelection = False
-        Me.ListView3.Location = New System.Drawing.Point(544, 122)
-        Me.ListView3.Name = "ListView3"
-        Me.ListView3.Size = New System.Drawing.Size(244, 175)
-        Me.ListView3.TabIndex = 3
-        Me.ListView3.UseCompatibleStateImageBehavior = False
-        Me.ListView3.View = System.Windows.Forms.View.Details
+        Me.BorrarPersona.Location = New System.Drawing.Point(30, 274)
+        Me.BorrarPersona.Name = "BorrarPersona"
+        Me.BorrarPersona.Size = New System.Drawing.Size(114, 29)
+        Me.BorrarPersona.TabIndex = 3
+        Me.BorrarPersona.Text = "Borrar Persona"
+        Me.BorrarPersona.UseVisualStyleBackColor = True
         '
-        'NombreMascota
+        'BorrarTelefono
         '
-        Me.NombreMascota.Text = "Nombre"
-        Me.NombreMascota.Width = 94
-        '
-        'AñoNacimiento
-        '
-        Me.AñoNacimiento.Text = "Año de Nacimiento"
-        Me.AñoNacimiento.Width = 148
+        Me.BorrarTelefono.Location = New System.Drawing.Point(402, 275)
+        Me.BorrarTelefono.Name = "BorrarTelefono"
+        Me.BorrarTelefono.Size = New System.Drawing.Size(113, 28)
+        Me.BorrarTelefono.TabIndex = 4
+        Me.BorrarTelefono.Text = "Borrar Telefono"
+        Me.BorrarTelefono.UseVisualStyleBackColor = True
         '
         'ListarPersonas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 350)
-        Me.Controls.Add(Me.ListView3)
+        Me.ClientSize = New System.Drawing.Size(571, 350)
+        Me.Controls.Add(Me.BorrarTelefono)
+        Me.Controls.Add(Me.BorrarPersona)
         Me.Controls.Add(Me.ListView2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ListView1)
@@ -134,7 +134,6 @@ Partial Class ListarPersonas
     Friend WithEvents Label1 As Label
     Friend WithEvents ListView2 As ListView
     Friend WithEvents Telefono As ColumnHeader
-    Friend WithEvents ListView3 As ListView
-    Friend WithEvents NombreMascota As ColumnHeader
-    Friend WithEvents AñoNacimiento As ColumnHeader
+    Friend WithEvents BorrarPersona As Button
+    Friend WithEvents BorrarTelefono As Button
 End Class

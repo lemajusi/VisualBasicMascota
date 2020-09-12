@@ -69,7 +69,7 @@
             conection_Npg.close
         End Try
     End Function
-    Function buscarPersona(ci As Integer) As ClassPersona
+    Function buscarPersona(ci As Integer)
         Try
             Dim Persona As New ClassPersona
             Dim Conn As New Conextion
@@ -91,6 +91,7 @@
                 Persona.direccion = Lector(2).ToString
             End If
             If Persona.nombre = "" And Persona.direccion = "" Then
+                Return Persona
             Else
                 Return Persona
             End If
@@ -100,9 +101,8 @@
             conection_Npg.close
         End Try
     End Function
-    Function buscarTelefonos(ci As Integer) As ClassPersona
+    Function buscarTelefonos(ci As Integer)
         Try
-            Dim Persona As New ClassPersona
             Dim Conn As New Conextion
             conection_Npg = Conn.AbrirConextion
             Dim cmd = New Npgsql.NpgsqlCommand
@@ -118,10 +118,10 @@
                 x = Convert.ToInt32(Lector(1).ToString)
                 ListaTelefonos.Add(x)
             End While
-            Persona.telefono = ListaTelefonos
-            If IsNothing(Persona) Then
+            If IsNothing(ListaTelefonos) Then
+                Return ListaTelefonos
             Else
-                Return Persona
+                Return ListaTelefonos
             End If
         Catch ex As Exception
             Throw ex
@@ -153,7 +153,7 @@
             conection_Npg.close
         End Try
     End Function
-    Function BorrarPersona(ci As Integer) As ClassPersona
+    Sub borrarPersona(ci As Integer)
         Try
             Dim Persona As New ClassPersona
             Dim Conn = New Conextion
@@ -161,7 +161,6 @@
             Dim cmd = New Npgsql.NpgsqlCommand
             cmd.Connection = conection_Npg
             Persona.cedula = ci
-
             Dim cadenaDeComandos = "delete from persona where ci = @ci"
             cmd.CommandText = cadenaDeComandos
             cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = Persona.cedula
@@ -171,5 +170,21 @@
         Finally
             conection_Npg.close
         End Try
-    End Function
+    End Sub
+    Sub borrarTelefono(ci As Integer, telefono As Integer)
+        Try
+            Dim Conn = New Conextion
+            conection_Npg = Conn.AbrirConextion
+            Dim cadenaDeComandos = "delete from telefono where cip = @ci and telefono = @telefono"
+            Dim cmd = New Npgsql.NpgsqlCommand(cadenaDeComandos)
+            cmd.Connection = conection_Npg
+            cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = ci
+            cmd.Parameters.Add("@telefono", NpgsqlTypes.NpgsqlDbType.Integer).Value = telefono
+            cmd.ExecuteNonQuery()
+        Catch ex As Exception
+            Throw ex
+        Finally
+            conection_Npg.close
+        End Try
+    End Sub
 End Class

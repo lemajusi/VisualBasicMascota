@@ -7,16 +7,24 @@
         Dim persistencia = New PersonaController
         Return persistencia.chequearCI(ci)
     End Function
-    Public Function buscarPersona(ci As Integer) As ClassPersona
+    Public Function buscarPersona(ci As Integer)
         Dim persistencia = New PersonaController
         Return persistencia.buscarPersona(ci)
     End Function
-    Public Function buscarTelefonos(ci As Integer) As ClassPersona
+    Public Function buscarTelefonos(ci As Integer)
         Dim persistencia = New PersonaController
         Return persistencia.buscarTelefonos(ci)
     End Function
-    Public Function TodasLasPersonas() As List(Of ClassPersona)
+    Public Function TodasLasPersonas()
         Dim persistencia = New PersonaController
         Return persistencia.TodasLasPersonas
     End Function
+    Public Sub borrarPersona(ci As Integer)
+        Dim persistencia = New PersonaController
+        persistencia.borrarPersona(ci)
+    End Sub
+    Public Sub borrarTelefono(ci As Integer, telefono As Integer)
+        Dim persistencia = New PersonaController
+        persistencia.borrarTelefono(ci, telefono)
+    End Sub
 End Class

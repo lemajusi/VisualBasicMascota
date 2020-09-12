@@ -118,12 +118,6 @@
     <Compile Include="Buscar y ActualizarM.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListarMascotasDPersona.Designer.vb">
-      <DependentUpon>ListarMascotasDPersona.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ListarMascotasDPersona.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ListarPersonas.Designer.vb">
       <DependentUpon>ListarPersonas.vb</DependentUpon>
     </Compile>
