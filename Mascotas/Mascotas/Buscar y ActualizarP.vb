@@ -6,7 +6,6 @@
             Dim cedula As Integer
             cedula = BACiP.Text
             Dim Persona As ClassPersona
-            Dim Telefonos As ClassPersona
             Dim logica As New LogicaPersona
             BANombreP.Text = ""
             BADireccionP.Text = ""
@@ -17,16 +16,11 @@
                 BADireccionP.Text = Persona.direccion
             End If
             ListView2.Items.Clear()
-            Telefonos = logica.buscarTelefonos(cedula)
-            Dim array(2) As String
-            If IsNothing(Telefonos) Then
+            Persona.telefono = logica.buscarTelefonos(cedula)
+            If IsNothing(Persona.telefono) Then
             Else
-                For index As Integer = 0 To Telefonos.telefono.Count - 1
-                    array(0) = Convert.ToString(index + 1)
-                    array(1) = Telefonos.telefono(index)
-                    Debug.WriteLine(array(1))
-                    Dim item = New ListViewItem(array)
-                    ListView2.Items.Add(item)
+                For index As Integer = 0 To Persona.telefono.Count - 1
+                    ListView2.Items.Add(Persona.telefono(index))
                 Next
             End If
         Catch ex As Exception
@@ -49,14 +43,5 @@
             Debug.WriteLine(ex)
             BATelefonoP.Text = "solo numeros"
         End Try
-    End Sub
-
-    Private Sub Modificar1Telefono_Click(sender As Object, e As EventArgs) Handles Modificar1Telefono.Click
-        BATelefonoP.Text = SltNum.Text
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
     End Sub
 End Class

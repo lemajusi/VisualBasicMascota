@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class BuscaryActualizar
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class BuscaryActualizar
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BuscaryActualizar))
         Me.Ok = New System.Windows.Forms.PictureBox()
@@ -28,7 +28,6 @@ Partial Class BuscaryActualizar
         Me.Actualizar = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ListView2 = New System.Windows.Forms.ListView()
-        Me.ListVSelect = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ListVTelefono = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label10 = New System.Windows.Forms.Label()
         Me.BATelefonoP = New System.Windows.Forms.TextBox()
@@ -41,14 +40,10 @@ Partial Class BuscaryActualizar
         Me.BANombreP = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.SltNum = New System.Windows.Forms.TextBox()
         Me.BotonModificar = New System.Windows.Forms.PictureBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Modificar1Telefono = New System.Windows.Forms.PictureBox()
         CType(Me.Ok, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NotOK, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BotonModificar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Modificar1Telefono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Ok
@@ -93,24 +88,21 @@ Partial Class BuscaryActualizar
         '
         'ListView2
         '
-        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ListVSelect, Me.ListVTelefono})
+        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ListVTelefono})
+        Me.ListView2.FullRowSelect = True
+        Me.ListView2.GridLines = True
         Me.ListView2.HideSelection = False
         Me.ListView2.Location = New System.Drawing.Point(278, 102)
         Me.ListView2.Name = "ListView2"
-        Me.ListView2.Size = New System.Drawing.Size(152, 139)
+        Me.ListView2.Size = New System.Drawing.Size(159, 139)
         Me.ListView2.TabIndex = 46
         Me.ListView2.UseCompatibleStateImageBehavior = False
-        Me.ListView2.View = System.Windows.Forms.View.Details
-        '
-        'ListVSelect
-        '
-        Me.ListVSelect.Text = "Slt"
-        Me.ListVSelect.Width = 36
+        Me.ListView2.View = System.Windows.Forms.View.List
         '
         'ListVTelefono
         '
         Me.ListVTelefono.Text = "Telefono"
-        Me.ListVTelefono.Width = 108
+        Me.ListVTelefono.Width = 142
         '
         'Label10
         '
@@ -203,14 +195,6 @@ Partial Class BuscaryActualizar
         Me.Label1.TabIndex = 35
         Me.Label1.Text = "Buscar y Actualizar"
         '
-        'SltNum
-        '
-        Me.SltNum.Location = New System.Drawing.Point(303, 247)
-        Me.SltNum.Name = "SltNum"
-        Me.SltNum.Size = New System.Drawing.Size(43, 20)
-        Me.SltNum.TabIndex = 51
-        Me.SltNum.Text = "SltNum"
-        '
         'BotonModificar
         '
         Me.BotonModificar.Image = CType(resources.GetObject("BotonModificar.Image"), System.Drawing.Image)
@@ -221,34 +205,12 @@ Partial Class BuscaryActualizar
         Me.BotonModificar.TabIndex = 52
         Me.BotonModificar.TabStop = False
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(142, 203)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(20, 13)
-        Me.Label6.TabIndex = 53
-        Me.Label6.Text = "SL"
-        '
-        'Modificar1Telefono
-        '
-        Me.Modificar1Telefono.Image = CType(resources.GetObject("Modificar1Telefono.Image"), System.Drawing.Image)
-        Me.Modificar1Telefono.Location = New System.Drawing.Point(278, 247)
-        Me.Modificar1Telefono.Name = "Modificar1Telefono"
-        Me.Modificar1Telefono.Size = New System.Drawing.Size(19, 20)
-        Me.Modificar1Telefono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Modificar1Telefono.TabIndex = 54
-        Me.Modificar1Telefono.TabStop = False
-        '
         'BuscaryActualizar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(471, 316)
-        Me.Controls.Add(Me.Modificar1Telefono)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.BotonModificar)
-        Me.Controls.Add(Me.SltNum)
         Me.Controls.Add(Me.Ok)
         Me.Controls.Add(Me.NotOK)
         Me.Controls.Add(Me.Actualizar)
@@ -273,7 +235,6 @@ Partial Class BuscaryActualizar
         CType(Me.Ok, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NotOK, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BotonModificar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Modificar1Telefono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -283,7 +244,6 @@ Partial Class BuscaryActualizar
     Friend WithEvents Actualizar As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents ListView2 As ListView
-    Friend WithEvents ListVSelect As ColumnHeader
     Friend WithEvents ListVTelefono As ColumnHeader
     Friend WithEvents Label10 As Label
     Friend WithEvents BATelefonoP As TextBox
@@ -296,8 +256,5 @@ Partial Class BuscaryActualizar
     Friend WithEvents BANombreP As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents SltNum As TextBox
     Friend WithEvents BotonModificar As PictureBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Modificar1Telefono As PictureBox
 End Class
