@@ -187,4 +187,18 @@
             conection_Npg.close
         End Try
     End Sub
+    Sub ActualizarPersona(Persona As ClassPersona)
+        Dim Conn = New Conextion
+        conection_Npg = Conn.AbrirConextion
+        Dim cadenaDeComandos = "update persona set nombre=@nombre,direccion=@direccion where ci=@ci"
+        Dim cmd = New Npgsql.NpgsqlCommand(cadenaDeComandos)
+        cmd.Connection = conection_Npg
+    End Sub
+    Sub actualizarTelefono(Persona As ClassPersona)
+        Dim Conn = New Conextion
+        conection_Npg = Conn.AbrirConextion
+        Dim cadenaDeComandos = "update telefono set telefono=@telefono where cip=@cip"
+        Dim cmd = New Npgsql.NpgsqlCommand(cadenaDeComandos)
+        cmd.Connection = conection_Npg
+    End Sub
 End Class

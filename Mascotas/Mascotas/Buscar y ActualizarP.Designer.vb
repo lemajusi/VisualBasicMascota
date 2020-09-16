@@ -207,8 +207,10 @@ Partial Class BuscaryActualizar
         '
         'BuscaryActualizar
         '
+        Me.AcceptButton = Me.Actualizar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(471, 316)
         Me.Controls.Add(Me.BotonModificar)
         Me.Controls.Add(Me.Ok)
@@ -228,6 +230,7 @@ Partial Class BuscaryActualizar
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(487, 355)
         Me.MinimumSize = New System.Drawing.Size(487, 355)
         Me.Name = "BuscaryActualizar"

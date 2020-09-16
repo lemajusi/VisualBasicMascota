@@ -124,7 +124,6 @@ C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.RegistroMascota.resources
 C:\Users\Admin\Desktop\proyectos\sline\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.ListarPersonas.resources
 C:\Proyecto\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.vbprojAssemblyReference.cache
-C:\Proyecto\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.Form2.resources
 C:\Proyecto\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.BuscaryActualizar.resources
 C:\Proyecto\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.ListarPersonas.resources
 C:\Proyecto\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.RegistroPersona.resources
@@ -162,3 +161,4 @@ C:\Proyecto\VisualBasicMascota\Mascotas\Mascotas\bin\Debug\System.Text.Json.xml
 C:\Proyecto\VisualBasicMascota\Mascotas\Mascotas\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Proyecto\VisualBasicMascota\Mascotas\Mascotas\bin\Debug\System.ValueTuple.xml
 C:\Proyecto\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.vbproj.CopyComplete
+C:\Proyecto\VisualBasicMascota\Mascotas\Mascotas\obj\Debug\Mascotas.BuscaryActualizarM.resources

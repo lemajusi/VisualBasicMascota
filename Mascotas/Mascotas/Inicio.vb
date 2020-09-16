@@ -20,7 +20,7 @@
         RegistroMascota.ShowDialog()
     End Sub
     Private Sub BuscaryActualizarMascotaMenu_Click(sender As Object, e As EventArgs) Handles BuscaryActualizarMascotaMenu.Click
-
+        BuscaryActualizarM.ShowDialog()
     End Sub
     Private Sub BorrarMascotaMenu_Click(sender As Object, e As EventArgs)
 
