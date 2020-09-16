@@ -187,18 +187,22 @@
             conection_Npg.close
         End Try
     End Sub
-    Sub ActualizarPersona(Persona As ClassPersona)
-        Dim Conn = New Conextion
-        conection_Npg = Conn.AbrirConextion
-        Dim cadenaDeComandos = "update persona set nombre=@nombre,direccion=@direccion where ci=@ci"
-        Dim cmd = New Npgsql.NpgsqlCommand(cadenaDeComandos)
-        cmd.Connection = conection_Npg
-    End Sub
-    Sub actualizarTelefono(Persona As ClassPersona)
-        Dim Conn = New Conextion
-        conection_Npg = Conn.AbrirConextion
-        Dim cadenaDeComandos = "update telefono set telefono=@telefono where cip=@cip"
-        Dim cmd = New Npgsql.NpgsqlCommand(cadenaDeComandos)
-        cmd.Connection = conection_Npg
+    Sub actualizarPersona(Persona As ClassPersona)
+        Try
+            Dim Conn = New Conextion
+            conection_Npg = Conn.AbrirConextion
+            Dim cadenaDeComandos = "update persona set nombre=@nombre,direccion=@direccion where ci=@ci"
+            Dim cmd = New Npgsql.NpgsqlCommand(cadenaDeComandos)
+            cmd.Connection = conection_Npg
+            cmd.Parameters.Add("@nombre", NpgsqlTypes.NpgsqlDbType.Varchar).Value = Persona.nombre
+            cmd.Parameters.Add("@direccion", NpgsqlTypes.NpgsqlDbType.Varchar).Value = Persona.direccion
+            cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = Persona.cedula
+            cmd.ExecuteReader()
+        Catch ex As Exception
+            Throw ex
+        Finally
+            conection_Npg.close
+        End Try
+
     End Sub
 End Class

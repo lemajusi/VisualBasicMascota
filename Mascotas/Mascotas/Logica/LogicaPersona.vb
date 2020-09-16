@@ -3,6 +3,10 @@
         Dim persistencia = New PersonaController
         persistencia.altaPersona(personaUser)
     End Sub
+    Public Sub altaTelefono(ci As Integer, telefono As Integer)
+        Dim persistencia = New PersonaController
+        persistencia.altaTelefono(ci, telefono)
+    End Sub
     Public Function chequearCi(ci As Integer)
         Dim persistencia = New PersonaController
         Return persistencia.chequearCI(ci)
@@ -26,5 +30,9 @@
     Public Sub borrarTelefono(ci As Integer, telefono As Integer)
         Dim persistencia = New PersonaController
         persistencia.borrarTelefono(ci, telefono)
+    End Sub
+    Public Sub ActualizarPersona(persona As ClassPersona)
+        Dim persistencia = New PersonaController
+        persistencia.actualizarPersona(persona)
     End Sub
 End Class
