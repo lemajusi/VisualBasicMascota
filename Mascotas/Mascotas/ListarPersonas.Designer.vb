@@ -22,6 +22,7 @@ Partial Class ListarPersonas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ListarPersonas))
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.LVCi = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.LVNombre = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -31,6 +32,11 @@ Partial Class ListarPersonas
         Me.Telefono = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.BorrarPersona = New System.Windows.Forms.Button()
         Me.BorrarTelefono = New System.Windows.Forms.Button()
+        Me.Modificar = New System.Windows.Forms.Button()
+        Me.AgregarTelefono = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ListView1
@@ -94,7 +100,7 @@ Partial Class ListarPersonas
         '
         'BorrarPersona
         '
-        Me.BorrarPersona.Location = New System.Drawing.Point(30, 274)
+        Me.BorrarPersona.Location = New System.Drawing.Point(30, 275)
         Me.BorrarPersona.Name = "BorrarPersona"
         Me.BorrarPersona.Size = New System.Drawing.Size(114, 29)
         Me.BorrarPersona.TabIndex = 3
@@ -103,18 +109,59 @@ Partial Class ListarPersonas
         '
         'BorrarTelefono
         '
-        Me.BorrarTelefono.Location = New System.Drawing.Point(402, 275)
+        Me.BorrarTelefono.Location = New System.Drawing.Point(529, 94)
         Me.BorrarTelefono.Name = "BorrarTelefono"
         Me.BorrarTelefono.Size = New System.Drawing.Size(113, 28)
         Me.BorrarTelefono.TabIndex = 4
         Me.BorrarTelefono.Text = "Borrar Telefono"
         Me.BorrarTelefono.UseVisualStyleBackColor = True
         '
+        'Modificar
+        '
+        Me.Modificar.Location = New System.Drawing.Point(528, 275)
+        Me.Modificar.Name = "Modificar"
+        Me.Modificar.Size = New System.Drawing.Size(114, 29)
+        Me.Modificar.TabIndex = 5
+        Me.Modificar.Text = "Modificar"
+        Me.Modificar.UseVisualStyleBackColor = True
+        '
+        'AgregarTelefono
+        '
+        Me.AgregarTelefono.Location = New System.Drawing.Point(529, 128)
+        Me.AgregarTelefono.Name = "AgregarTelefono"
+        Me.AgregarTelefono.Size = New System.Drawing.Size(113, 28)
+        Me.AgregarTelefono.TabIndex = 6
+        Me.AgregarTelefono.Text = "Agregar Telefono"
+        Me.AgregarTelefono.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(532, 167)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(109, 20)
+        Me.TextBox1.TabIndex = 7
+        Me.TextBox1.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(618, 193)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(24, 24)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
+        '
         'ListarPersonas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(571, 350)
+        Me.ClientSize = New System.Drawing.Size(680, 350)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.AgregarTelefono)
+        Me.Controls.Add(Me.Modificar)
         Me.Controls.Add(Me.BorrarTelefono)
         Me.Controls.Add(Me.BorrarPersona)
         Me.Controls.Add(Me.ListView2)
@@ -122,6 +169,7 @@ Partial Class ListarPersonas
         Me.Controls.Add(Me.ListView1)
         Me.Name = "ListarPersonas"
         Me.Text = "Lista de Personas"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -136,4 +184,8 @@ Partial Class ListarPersonas
     Friend WithEvents Telefono As ColumnHeader
     Friend WithEvents BorrarPersona As Button
     Friend WithEvents BorrarTelefono As Button
+    Friend WithEvents Modificar As Button
+    Friend WithEvents AgregarTelefono As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

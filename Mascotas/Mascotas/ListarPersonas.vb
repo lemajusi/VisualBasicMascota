@@ -1,6 +1,7 @@
 ﻿Public Class ListarPersonas
     Private LofPersonas As List(Of ClassPersona)
     Private LofTelefonos As List(Of Integer)
+    Private agregartelefono = 1
     Sub listar()
         Try
             Dim logica As New LogicaPersona
@@ -20,17 +21,7 @@
     'listviem1.itemcheck anda solo con checkbox'
     'que inporta este anda bien de bien'
     Private Sub ListView1_MouseClick(sender As Object, e As MouseEventArgs) Handles ListView1.MouseClick
-        Try
-            Dim LVindex = ListView1.FocusedItem.Index
-            Dim logica = New LogicaPersona
-            LofTelefonos = logica.buscarTelefonos(LofPersonas(LVindex).cedula)
-            ListView2.Items.Clear()
-            For index As Integer = 0 To LofTelefonos.Count - 1
-                ListView2.Items.Add(LofTelefonos(index))
-            Next
-        Catch ex As Exception
-            Throw ex
-        End Try
+        BLTelefono()
     End Sub
 
     Private Sub BorrarPersona_Click(sender As Object, e As EventArgs) Handles BorrarPersona.Click
@@ -56,6 +47,36 @@
             logica.borrarTelefono(LofPersonas(LV1index).cedula, LofTelefonos(LV2index))
         Catch ex As Exception
             Throw ex
+        Finally
+            BLTelefono()
         End Try
+    End Sub
+    Private Sub BLTelefono()
+        Try
+            Dim LVindex = ListView1.FocusedItem.Index
+            Dim logica = New LogicaPersona
+            LofTelefonos = logica.buscarTelefonos(LofPersonas(LVindex).cedula)
+            ListView2.Items.Clear()
+            For index As Integer = 0 To LofTelefonos.Count - 1
+                ListView2.Items.Add(LofTelefonos(index))
+            Next
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+    Private Sub AgregarTelefono_Click(sender As Object, e As EventArgs) Handles AgregarTelefono.Click
+        Label1
+    End Sub
+
+    Private Sub Modificar_Click(sender As Object, e As EventArgs) Handles Modificar.Click
+        Dim LVindex = ListView1.FocusedItem.Index
+        BuscaryActualizar.BuscarP(LofPersonas(LVindex).cedula)
+        Me.Hide()
+        BuscaryActualizar.ShowDialog()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
     End Sub
 End Class

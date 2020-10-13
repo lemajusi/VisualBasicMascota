@@ -193,6 +193,7 @@
             conection_Npg = Conn.AbrirConextion
             Dim cadenaDeComandos = "update persona set nombre=@nombre,direccion=@direccion where ci=@ci"
             Dim cmd = New Npgsql.NpgsqlCommand(cadenaDeComandos)
+
             cmd.Connection = conection_Npg
             cmd.Parameters.Add("@nombre", NpgsqlTypes.NpgsqlDbType.Varchar).Value = Persona.nombre
             cmd.Parameters.Add("@direccion", NpgsqlTypes.NpgsqlDbType.Varchar).Value = Persona.direccion
@@ -203,6 +204,5 @@
         Finally
             conection_Npg.close
         End Try
-
     End Sub
 End Class

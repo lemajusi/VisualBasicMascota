@@ -70,6 +70,7 @@ Partial Class BuscaryActualizar
         '
         'Actualizar
         '
+        Me.Actualizar.Enabled = False
         Me.Actualizar.Location = New System.Drawing.Point(148, 254)
         Me.Actualizar.Name = "Actualizar"
         Me.Actualizar.Size = New System.Drawing.Size(75, 23)
