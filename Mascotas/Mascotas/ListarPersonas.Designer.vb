@@ -33,9 +33,9 @@ Partial Class ListarPersonas
         Me.BorrarPersona = New System.Windows.Forms.Button()
         Me.BorrarTelefono = New System.Windows.Forms.Button()
         Me.Modificar = New System.Windows.Forms.Button()
-        Me.AgregarTelefono = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -125,15 +125,6 @@ Partial Class ListarPersonas
         Me.Modificar.Text = "Modificar"
         Me.Modificar.UseVisualStyleBackColor = True
         '
-        'AgregarTelefono
-        '
-        Me.AgregarTelefono.Location = New System.Drawing.Point(529, 128)
-        Me.AgregarTelefono.Name = "AgregarTelefono"
-        Me.AgregarTelefono.Size = New System.Drawing.Size(113, 28)
-        Me.AgregarTelefono.TabIndex = 6
-        Me.AgregarTelefono.Text = "Agregar Telefono"
-        Me.AgregarTelefono.UseVisualStyleBackColor = True
-        '
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(532, 167)
@@ -153,14 +144,23 @@ Partial Class ListarPersonas
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(529, 128)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(113, 28)
+        Me.Button1.TabIndex = 9
+        Me.Button1.Text = "Agregar Telefono"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'ListarPersonas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(680, 350)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.AgregarTelefono)
         Me.Controls.Add(Me.Modificar)
         Me.Controls.Add(Me.BorrarTelefono)
         Me.Controls.Add(Me.BorrarPersona)
@@ -185,7 +185,7 @@ Partial Class ListarPersonas
     Friend WithEvents BorrarPersona As Button
     Friend WithEvents BorrarTelefono As Button
     Friend WithEvents Modificar As Button
-    Friend WithEvents AgregarTelefono As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button1 As Button
 End Class

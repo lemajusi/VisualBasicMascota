@@ -2,6 +2,8 @@
     Private NombreCM As String
     Private AñoNacCM As Integer
     Private CedulaPCM As Integer
+    Private TipoCM As String
+
     Public Property nombreM As String
         Get
             Return NombreCM
@@ -26,9 +28,18 @@
             CedulaPCM = value
         End Set
     End Property
-    Public Sub CrearMascota(NombreCM As String, AñoNacCM As Integer, cedulaPCM As Integer)
+    Public Property TipoM As String
+        Get
+            Return TipoCM
+        End Get
+        Set(value As String)
+            TipoCM = value
+        End Set
+    End Property
+    Public Sub CrearMascota(NombreCM As String, AñoNacCM As Integer, cedulaPCM As Integer, TipoCM As String)
         NombreCM = Me.NombreCM
         AñoNacCM = Me.AñoNacCM
         cedulaPCM = Me.CedulaPCM
+        TipoCM = Me.TipoCM
     End Sub
 End Class

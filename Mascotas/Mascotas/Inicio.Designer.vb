@@ -28,6 +28,7 @@ Partial Class Inicio
         Me.CrearMascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuscaryActualizarMascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListarMascotaMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CIDePersonaToolStripMenuItem = New System.Windows.Forms.ToolStripTextBox()
         Me.PersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearPersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuscaryActualizarPersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
@@ -58,6 +59,7 @@ Partial Class Inicio
         Me.MedianoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GrandeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ColorFondoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NpgsqlCommand1 = New Npgsql.NpgsqlCommand()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -66,9 +68,9 @@ Partial Class Inicio
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 24)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(383, 386)
+        Me.PictureBox1.Size = New System.Drawing.Size(383, 410)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -94,9 +96,17 @@ Partial Class Inicio
         '
         'ListarMascotaMenu
         '
+        Me.ListarMascotaMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CIDePersonaToolStripMenuItem})
         Me.ListarMascotaMenu.Name = "ListarMascotaMenu"
         Me.ListarMascotaMenu.Size = New System.Drawing.Size(180, 22)
         Me.ListarMascotaMenu.Text = "Listar y Borrar"
+        '
+        'CIDePersonaToolStripMenuItem
+        '
+        Me.CIDePersonaToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.CIDePersonaToolStripMenuItem.Name = "CIDePersonaToolStripMenuItem"
+        Me.CIDePersonaToolStripMenuItem.Size = New System.Drawing.Size(180, 23)
+        Me.CIDePersonaToolStripMenuItem.Text = "CI de Persona"
         '
         'PersonaMenu
         '
@@ -108,19 +118,19 @@ Partial Class Inicio
         'CrearPersonaMenu
         '
         Me.CrearPersonaMenu.Name = "CrearPersonaMenu"
-        Me.CrearPersonaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.CrearPersonaMenu.Size = New System.Drawing.Size(173, 22)
         Me.CrearPersonaMenu.Text = "Registro"
         '
         'BuscaryActualizarPersonaMenu
         '
         Me.BuscaryActualizarPersonaMenu.Name = "BuscaryActualizarPersonaMenu"
-        Me.BuscaryActualizarPersonaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.BuscaryActualizarPersonaMenu.Size = New System.Drawing.Size(173, 22)
         Me.BuscaryActualizarPersonaMenu.Text = "Buscar y Actualizar"
         '
         'ListarPersonaMenu
         '
         Me.ListarPersonaMenu.Name = "ListarPersonaMenu"
-        Me.ListarPersonaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.ListarPersonaMenu.Size = New System.Drawing.Size(173, 22)
         Me.ListarPersonaMenu.Text = "Listar y Borrar"
         '
         'MenuStrip1
@@ -285,14 +295,20 @@ Partial Class Inicio
         Me.ColorFondoToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.ColorFondoToolStripMenuItem.Text = "Color Fondo"
         '
+        'NpgsqlCommand1
+        '
+        Me.NpgsqlCommand1.AllResultTypesAreUnknown = False
+        Me.NpgsqlCommand1.Transaction = Nothing
+        Me.NpgsqlCommand1.UnknownResultTypeList = Nothing
+        '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(383, 410)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximumSize = New System.Drawing.Size(399, 449)
@@ -310,7 +326,6 @@ Partial Class Inicio
     Friend WithEvents MascotaMenu As ToolStripMenuItem
     Friend WithEvents CrearMascotaMenu As ToolStripMenuItem
     Friend WithEvents BuscaryActualizarMascotaMenu As ToolStripMenuItem
-    Friend WithEvents ListarMascotaMenu As ToolStripMenuItem
     Friend WithEvents PersonaMenu As ToolStripMenuItem
     Friend WithEvents CrearPersonaMenu As ToolStripMenuItem
     Friend WithEvents BuscaryActualizarPersonaMenu As ToolStripMenuItem
@@ -341,4 +356,7 @@ Partial Class Inicio
     Friend WithEvents AzulToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WhiteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DarkToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListarMascotaMenu As ToolStripMenuItem
+    Friend WithEvents CIDePersonaToolStripMenuItem As ToolStripTextBox
+    Friend WithEvents NpgsqlCommand1 As Npgsql.NpgsqlCommand
 End Class

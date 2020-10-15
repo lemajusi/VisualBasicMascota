@@ -17,17 +17,18 @@
             newPersona.telefono = Ltelefono
             'llamar logica'
             Dim logica = New LogicaPersona
-            Dim a As Boolean
-            a = logica.chequearCi(ci)
-            If a = True Then
+            Dim persona As ClassPersona
+            persona = logica.chequearCi(ci)
+            If IsNothing(persona) Then
+                MessageBox.Show("Fallo al crear")
+            Else
                 logica.altaPersona(newPersona)
                 Ok.Visible = True
                 NombreP.Text = ""
                 DireccionP.Text = ""
                 CiP.Text = ""
                 ListView1.Clear()
-            Else
-                NotOK.Visible = True
+                MessageBox.Show("Creado Correctamente")
             End If
         Catch ex As Exception
             Throw ex
@@ -50,21 +51,25 @@
         Try
             Dim cedula As Integer
             cedula = CiP.Text
+            Dim existe = False
             Dim Persona As New ClassPersona
-            Dim Telefonos As ClassPersona
             Dim logica As New LogicaPersona
             Persona = logica.buscarPersona(cedula)
             If IsNothing(Persona) Then
+                MessageBox.Show("No existe este usuario")
             Else
+                existe = True
                 NombreP.Text = Persona.nombre
                 DireccionP.Text = Persona.direccion
             End If
-            Telefonos = logica.buscarTelefonos(cedula)
-            If IsNothing(Telefonos) Then
-            Else
-                For index As Integer = 0 To Telefonos.telefono.Count - 1
-                    ListView1.Items.Add(Telefonos.telefono(index))
-                Next
+            If existe Then
+                Persona.telefono = logica.buscarTelefono(Persona.cedula)
+                If IsNothing(Persona.telefono) Then
+                Else
+                    For index As Integer = 0 To Persona.telefono.Count - 1
+                        ListView1.Items.Add(Persona.telefono(index))
+                    Next
+                End If
             End If
         Catch ex As Exception
             Throw ex

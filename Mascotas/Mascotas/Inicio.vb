@@ -7,10 +7,6 @@
     Private Sub BuscaryActualizarPersonaMenu_Click(sender As Object, e As EventArgs) Handles BuscaryActualizarPersonaMenu.Click
         BuscaryActualizar.ShowDialog()
     End Sub
-    Private Sub BorrarPersonaMenu_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub ListarPersonaMenu_Click(sender As Object, e As EventArgs) Handles ListarPersonaMenu.Click
         ListarPersonas.listar()
         ListarPersonas.ShowDialog()
@@ -21,9 +17,6 @@
     End Sub
     Private Sub BuscaryActualizarMascotaMenu_Click(sender As Object, e As EventArgs) Handles BuscaryActualizarMascotaMenu.Click
         BuscaryActualizarM.ShowDialog()
-    End Sub
-    Private Sub BorrarMascotaMenu_Click(sender As Object, e As EventArgs)
-
     End Sub
     Private Sub ListarMascotaMenu_Click(sender As Object, e As EventArgs) Handles ListarMascotaMenu.Click
 
@@ -110,5 +103,26 @@
         BuscaryActualizar.BackColor = Drawing.Color.DimGray
         BuscaryActualizarM.BackColor = Drawing.Color.DimGray
         ListarPersonas.BackColor = Drawing.Color.DimGray
+    End Sub
+
+    Private Sub CIDePersonaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CIDePersonaToolStripMenuItem.Click
+        CIDePersonaToolStripMenuItem.Text = ""
+    End Sub
+
+    Private Sub CIDePersonaToolStripMenuItem_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CIDePersonaToolStripMenuItem.KeyPress
+        Try
+            Dim key = Convert.ToChar(Keys.Enter)
+            If e.KeyChar = key Then
+                Dim cip = CIDePersonaToolStripMenuItem.Text
+                If IsNothing(cip) Then
+                Else
+                    Lista_Mascotas.Listar(cip)
+                    Lista_Mascotas.ShowDialog()
+                End If
+            End If
+        Catch ex As Exception
+            Throw ex
+        End Try
+
     End Sub
 End Class

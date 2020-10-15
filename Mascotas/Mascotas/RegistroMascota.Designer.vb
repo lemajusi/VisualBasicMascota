@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class RegistroMascota
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class RegistroMascota
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistroMascota))
         Me.AñoNacMas = New System.Windows.Forms.TextBox()
@@ -28,13 +28,12 @@ Partial Class RegistroMascota
         Me.NombreMas = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Registro = New System.Windows.Forms.Button()
         Me.CedulaPer = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Ok = New System.Windows.Forms.PictureBox()
-        Me.Busqueda = New System.Windows.Forms.Button()
         CType(Me.Ok, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -80,14 +79,14 @@ Partial Class RegistroMascota
         Me.Label1.TabIndex = 33
         Me.Label1.Text = "Registro"
         '
-        'Button1
+        'Registro
         '
-        Me.Button1.Location = New System.Drawing.Point(33, 241)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 34
-        Me.Button1.Text = "Registro"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Registro.Location = New System.Drawing.Point(33, 241)
+        Me.Registro.Name = "Registro"
+        Me.Registro.Size = New System.Drawing.Size(75, 23)
+        Me.Registro.TabIndex = 34
+        Me.Registro.Text = "Registro"
+        Me.Registro.UseVisualStyleBackColor = True
         '
         'CedulaPer
         '
@@ -134,27 +133,17 @@ Partial Class RegistroMascota
         Me.Ok.TabStop = False
         Me.Ok.Visible = False
         '
-        'Busqueda
-        '
-        Me.Busqueda.Location = New System.Drawing.Point(143, 241)
-        Me.Busqueda.Name = "Busqueda"
-        Me.Busqueda.Size = New System.Drawing.Size(75, 23)
-        Me.Busqueda.TabIndex = 40
-        Me.Busqueda.Text = "Buscar"
-        Me.Busqueda.UseVisualStyleBackColor = True
-        '
         'RegistroMascota
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(380, 297)
         Me.Controls.Add(Me.Ok)
-        Me.Controls.Add(Me.Busqueda)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.CedulaPer)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Registro)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.AñoNacMas)
         Me.Controls.Add(Me.Label6)
@@ -173,11 +162,10 @@ Partial Class RegistroMascota
     Friend WithEvents NombreMas As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Registro As Button
     Friend WithEvents CedulaPer As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Ok As PictureBox
-    Friend WithEvents Busqueda As Button
 End Class

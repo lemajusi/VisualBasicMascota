@@ -5,7 +5,7 @@
     Dim cedula As Integer
     Dim telefono As Integer
     Dim item As Integer
-    Public Sub BuscarP(ci As Integer)
+    Public Sub BuscarPer(ci As Integer)
         Try
             cedula = ci
             BANombreP.Text = ""
@@ -16,14 +16,14 @@
                 BANombreP.Text = Persona.nombre
                 BADireccionP.Text = Persona.direccion
             End If
-            BuscarT(Persona)
+            BuscarTel(Persona)
         Catch ex As Exception
             Throw ex
         End Try
     End Sub
-    Public Sub BuscarT(Persona As ClassPersona)
+    Public Sub BuscarTel(Persona As ClassPersona)
         ListView2.Items.Clear()
-        Persona.telefono = logica.buscarTelefonos(cedula)
+        Persona.telefono = logica.buscarTelefono(cedula)
         If IsNothing(Persona.telefono) Then
         Else
             For index As Integer = 0 To Persona.telefono.Count - 1
@@ -40,7 +40,7 @@
         Catch ex As Exception
             Throw ex
         End Try
-        BuscarP(cedula)
+        BuscarPer(cedula)
     End Sub
     Private Sub Actualizar_Click(sender As Object, e As EventArgs) Handles Actualizar.Click
         Try
@@ -51,8 +51,8 @@
             For index As Integer = 0 To Persona.telefono.Count - 1
                 If Persona.telefono(index) = -1 Then
                 Else
-                    logica.borrarTelefono(Persona.cedula, Persona.telefono(index))
-                    logica.altaTelefono(Persona.cedula, Persona.telefono(index))
+                    logica.borrarTelefonos(Persona)
+                    logica.altaTelefono(Persona)
                 End If
             Next
         Catch ex As Exception
@@ -88,28 +88,23 @@
         Dim btActualizar = Actualizar
         btActualizar.Enabled = True
     End Sub
-
     Private Sub LVMouseClick(sender As Object, e As MouseEventArgs) Handles ListView2.MouseClick
         item = ListView2.FocusedItem.Index
         BATelefonoP.Text = Persona.telefono(item)
         bool = True
     End Sub
-
     Private Sub BANombreP_TextChanged(sender As Object, e As EventArgs) Handles BANombreP.TextChanged
         Dim btActualizar = Actualizar
         btActualizar.Enabled = True
     End Sub
-
     Private Sub BADireccionP_TextChanged(sender As Object, e As EventArgs) Handles BADireccionP.TextChanged
         Dim btActualizar = Actualizar
         btActualizar.Enabled = True
     End Sub
-
     Private Sub BACiP_TextChanged(sender As Object, e As EventArgs) Handles BACiP.TextChanged
         Dim btActualizar = Actualizar
         btActualizar.Enabled = True
     End Sub
-
     Private Sub BATelefonoP_TextChanged(sender As Object, e As EventArgs) Handles BATelefonoP.TextChanged
         Dim btActualizar = Actualizar
         btActualizar.Enabled = True

@@ -1,6 +1,5 @@
 ﻿Public Class PersonaController
-    Private Dim conection_Npg = New Npgsql.NpgsqlConnection
-    Private ListaTelefonos = New List(Of Integer)
+    Private conection_Npg = New Npgsql.NpgsqlConnection
     Sub altaPersona(personaUser As ClassPersona)
         Try
             Dim Conn = New Conextion
@@ -13,32 +12,13 @@
             cmd.Parameters.Add("@direccion", NpgsqlTypes.NpgsqlDbType.Varchar, 100).Value = personaUser.direccion
             Dim resultado As Integer
             resultado = cmd.ExecuteNonQuery()
-            For index As Integer = -1 + 1 To personaUser.telefono.Count() - 1
-                altaTelefono(personaUser.cedula, personaUser.telefono(index))
-            Next
         Catch ex As Exception
             Throw ex
         Finally
             conection_Npg.close
         End Try
     End Sub
-    Sub altaTelefono(cedula As Integer, telefono As Integer)
-        Try
-            Dim Conn = New Conextion
-            conection_Npg = Conn.AbrirConextion
-            Dim CadenaDeComandos = "insert into Telefono (cip,telefono) values (@ciP,@telefono);"
-            Dim cmd = New Npgsql.NpgsqlCommand(CadenaDeComandos)
-            cmd.Connection = conection_Npg
-            cmd.Parameters.Add("@ciP", NpgsqlTypes.NpgsqlDbType.Integer).Value = cedula
-            cmd.Parameters.Add("@telefono", NpgsqlTypes.NpgsqlDbType.Integer).Value = telefono
-            Dim resultado As Integer
-            resultado = cmd.ExecuteNonQuery()
-        Catch ex As Exception
-            Throw ex
-        Finally
-            conection_Npg.close
-        End Try
-    End Sub
+
     Function chequearCI(ci As Integer)
         Try
             Dim Conn As New Conextion
@@ -51,18 +31,13 @@
             cmd.CommandText = cadenadecomandos
             cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = ci
             Dim Lector As Npgsql.NpgsqlDataReader = cmd.ExecuteReader
-            Dim cedula As Integer
-            Dim a As Boolean
+
+            Dim persona As New ClassPersona
             If Lector.Read() Then
-                cedula = Convert.ToInt32(Lector(0).ToString)
+                persona.cedula = Convert.ToInt32(Lector(0).ToString)
+                persona.nombre = Lector(1).ToString
             End If
-            If cedula = ci Then
-                a = False
-                Return a
-            Else
-                a = True
-                Return a
-            End If
+            Return persona
         Catch ex As Exception
             Throw ex
         Finally
@@ -101,34 +76,7 @@
             conection_Npg.close
         End Try
     End Function
-    Function buscarTelefonos(ci As Integer)
-        Try
-            Dim Conn As New Conextion
-            conection_Npg = Conn.AbrirConextion
-            Dim cmd = New Npgsql.NpgsqlCommand
-            cmd.Connection = conection_Npg
 
-            Dim cadenaDeComandos = "select * from telefono where cip = @ci"
-
-            cmd.CommandText = cadenaDeComandos
-            cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = ci
-            Dim Lector As Npgsql.NpgsqlDataReader = cmd.ExecuteReader
-            Dim x As Integer
-            While Lector.Read()
-                x = Convert.ToInt32(Lector(1).ToString)
-                ListaTelefonos.Add(x)
-            End While
-            If IsNothing(ListaTelefonos) Then
-                Return ListaTelefonos
-            Else
-                Return ListaTelefonos
-            End If
-        Catch ex As Exception
-            Throw ex
-        Finally
-            conection_Npg.close
-        End Try
-    End Function
     Function TodasLasPersonas() As List(Of ClassPersona)
         Try
             Dim array As New List(Of ClassPersona)
@@ -171,22 +119,7 @@
             conection_Npg.close
         End Try
     End Sub
-    Sub borrarTelefono(ci As Integer, telefono As Integer)
-        Try
-            Dim Conn = New Conextion
-            conection_Npg = Conn.AbrirConextion
-            Dim cadenaDeComandos = "delete from telefono where cip = @ci and telefono = @telefono"
-            Dim cmd = New Npgsql.NpgsqlCommand(cadenaDeComandos)
-            cmd.Connection = conection_Npg
-            cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = ci
-            cmd.Parameters.Add("@telefono", NpgsqlTypes.NpgsqlDbType.Integer).Value = telefono
-            cmd.ExecuteNonQuery()
-        Catch ex As Exception
-            Throw ex
-        Finally
-            conection_Npg.close
-        End Try
-    End Sub
+
     Sub actualizarPersona(Persona As ClassPersona)
         Try
             Dim Conn = New Conextion
