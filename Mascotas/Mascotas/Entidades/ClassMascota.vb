@@ -37,9 +37,9 @@
         End Set
     End Property
     Public Sub CrearMascota(NombreCM As String, AñoNacCM As Integer, cedulaPCM As Integer, TipoCM As String)
-        NombreCM = Me.NombreCM
-        AñoNacCM = Me.AñoNacCM
-        cedulaPCM = Me.CedulaPCM
-        TipoCM = Me.TipoCM
+        Me.NombreCM = NombreCM
+        Me.AñoNacCM = AñoNacCM
+        Me.CedulaPCM = cedulaPCM
+        Me.TipoCM = TipoCM
     End Sub
 End Class

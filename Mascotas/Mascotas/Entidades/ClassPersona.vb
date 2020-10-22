@@ -39,9 +39,9 @@
     End Property
 
     Public Sub CrearPersona(NombreCP As String, DireccionCP As String, TelefonoCP As List(Of Integer), CedulaCP As Integer)
-        NombreCP = Me.nombreCP
-        DireccionCP = Me.direccionCP
-        TelefonoCP = Me.telefonoCP
-        CedulaCP = Me.cedulaCP
+        Me.nombreCP = NombreCP
+        Me.direccionCP = DireccionCP
+        Me.telefonoCP = TelefonoCP
+        Me.cedulaCP = CedulaCP
     End Sub
 End Class
