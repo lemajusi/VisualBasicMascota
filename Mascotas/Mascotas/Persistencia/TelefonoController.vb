@@ -15,7 +15,7 @@
         Catch ex As Exception
             Throw ex
         Finally
-            conection_Npg.close
+            ConexionClose()
         End Try
     End Sub
     Public Function buscarTelefonos(ci As Integer)
@@ -43,7 +43,7 @@
         Catch ex As Exception
             Throw ex
         Finally
-            conection_Npg.close
+            ConexionClose()
         End Try
     End Function
     Public Sub borrarTelefono(ci As Integer, telefono As Integer)
@@ -59,9 +59,14 @@
         Catch ex As Exception
             Throw ex
         Finally
-            conection_Npg.close
+            ConexionClose()
         End Try
     End Sub
+
+    Private Sub ConexionClose()
+        conection_Npg.close
+    End Sub
+
     Public Sub borrarTelefonos()
 
     End Sub

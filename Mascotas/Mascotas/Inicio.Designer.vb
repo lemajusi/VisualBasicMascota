@@ -85,20 +85,20 @@ Partial Class Inicio
         'CrearMascotaMenu
         '
         Me.CrearMascotaMenu.Name = "CrearMascotaMenu"
-        Me.CrearMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.CrearMascotaMenu.Size = New System.Drawing.Size(173, 22)
         Me.CrearMascotaMenu.Text = "Registro"
         '
         'BuscaryActualizarMascotaMenu
         '
         Me.BuscaryActualizarMascotaMenu.Name = "BuscaryActualizarMascotaMenu"
-        Me.BuscaryActualizarMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.BuscaryActualizarMascotaMenu.Size = New System.Drawing.Size(173, 22)
         Me.BuscaryActualizarMascotaMenu.Text = "Buscar y Actualizar"
         '
         'ListarMascotaMenu
         '
         Me.ListarMascotaMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CIDePersonaToolStripMenuItem})
         Me.ListarMascotaMenu.Name = "ListarMascotaMenu"
-        Me.ListarMascotaMenu.Size = New System.Drawing.Size(180, 22)
+        Me.ListarMascotaMenu.Size = New System.Drawing.Size(173, 22)
         Me.ListarMascotaMenu.Text = "Listar y Borrar"
         '
         'CIDePersonaToolStripMenuItem
@@ -118,19 +118,19 @@ Partial Class Inicio
         'CrearPersonaMenu
         '
         Me.CrearPersonaMenu.Name = "CrearPersonaMenu"
-        Me.CrearPersonaMenu.Size = New System.Drawing.Size(173, 22)
+        Me.CrearPersonaMenu.Size = New System.Drawing.Size(180, 22)
         Me.CrearPersonaMenu.Text = "Registro"
         '
         'BuscaryActualizarPersonaMenu
         '
         Me.BuscaryActualizarPersonaMenu.Name = "BuscaryActualizarPersonaMenu"
-        Me.BuscaryActualizarPersonaMenu.Size = New System.Drawing.Size(173, 22)
+        Me.BuscaryActualizarPersonaMenu.Size = New System.Drawing.Size(180, 22)
         Me.BuscaryActualizarPersonaMenu.Text = "Buscar y Actualizar"
         '
         'ListarPersonaMenu
         '
         Me.ListarPersonaMenu.Name = "ListarPersonaMenu"
-        Me.ListarPersonaMenu.Size = New System.Drawing.Size(173, 22)
+        Me.ListarPersonaMenu.Size = New System.Drawing.Size(180, 22)
         Me.ListarPersonaMenu.Text = "Listar y Borrar"
         '
         'MenuStrip1
