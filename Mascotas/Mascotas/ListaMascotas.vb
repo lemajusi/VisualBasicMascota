@@ -26,4 +26,11 @@
         End If
 
     End Sub
+
+    Private Sub SetModMascotas_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim index = LVMascotas.FocusedItem.Index
+        BuscaryActualizarM.Show()
+        BuscaryActualizarM.SetMascota(persona.cedula, lisMascotas(index))
+        Hide()
+    End Sub
 End Class

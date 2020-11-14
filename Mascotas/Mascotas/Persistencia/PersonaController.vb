@@ -1,6 +1,6 @@
 ﻿Public Class PersonaController
     Private conection_Npg = New Npgsql.NpgsqlConnection
-    Sub altaPersona(personaUser As ClassPersona)
+    Public Sub AltaPersona(personaUser As ClassPersona)
         Try
             Dim Conn = New Conextion
             conection_Npg = Conn.AbrirConextion
@@ -15,11 +15,11 @@
         Catch ex As Exception
             Throw ex
         Finally
-            conection_Npg.close
+            ConnEnd()
         End Try
     End Sub
 
-    Function chequearCI(ci As Integer)
+    Public Function ChequearCI(ci As Integer)
         Try
             Dim Conn As New Conextion
             Dim cmd = New Npgsql.NpgsqlCommand
@@ -41,10 +41,10 @@
         Catch ex As Exception
             Throw ex
         Finally
-            conection_Npg.close
+            ConnEnd()
         End Try
     End Function
-    Function buscarPersona(ci As Integer)
+    Public Function BuscarPersona(ci As Integer)
         Try
             Dim Persona As New ClassPersona
             Dim Conn As New Conextion
@@ -73,11 +73,11 @@
         Catch ex As Exception
             Throw ex
         Finally
-            conection_Npg.close
+            ConnEnd()
         End Try
     End Function
 
-    Function TodasLasPersonas() As List(Of ClassPersona)
+    Public Function TodasLasPersonas() As List(Of ClassPersona)
         Try
             Dim array As New List(Of ClassPersona)
             Dim Conn As New Conextion
@@ -98,10 +98,10 @@
         Catch ex As Exception
             Throw ex
         Finally
-            conection_Npg.close
+            ConnEnd()
         End Try
     End Function
-    Sub borrarPersona(ci As Integer)
+    Public Sub BorrarPersona(ci As Integer)
         Try
             Dim Persona As New ClassPersona
             Dim Conn = New Conextion
@@ -116,11 +116,11 @@
         Catch ex As Exception
             Throw ex
         Finally
-            conection_Npg.close
+            ConnEnd()
         End Try
     End Sub
 
-    Sub actualizarPersona(Persona As ClassPersona)
+    Public Sub ActualizarPersona(Persona As ClassPersona)
         Try
             Dim Conn = New Conextion
             conection_Npg = Conn.AbrirConextion
@@ -135,7 +135,10 @@
         Catch ex As Exception
             Throw ex
         Finally
-            conection_Npg.close
+            ConnEnd()
         End Try
+    End Sub
+    Private Sub ConnEnd()
+        conection_Npg.close
     End Sub
 End Class

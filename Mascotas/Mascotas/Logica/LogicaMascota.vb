@@ -1,10 +1,18 @@
 ﻿Public Class LogicaMascota
-    Public Sub altaMascota(mascotaUser As ClassMascota)
+    Public Sub AltaMascota(mascotaUser As ClassMascota)
         Dim persistencia = New MascotaController
         persistencia.altaMascota(mascotaUser)
     End Sub
-    Public Function listarMascotas(ci As Integer)
+    Public Function ListarMascotas(ci As Integer)
         Dim persistencia = New MascotaController
         Return persistencia.listarMascota(ci)
+    End Function
+    Public Sub BajaMascotas(ci As Integer)
+        Dim persistencia = New MascotaController
+        persistencia.BajaMascotas(ci)
+    End Sub
+    Public Function BuscarMascota(ci As Integer, nombre As String)
+        Dim persistencia = New MascotaController
+        Return persistencia.BuscarMascota(ci, nombre)
     End Function
 End Class

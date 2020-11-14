@@ -31,14 +31,16 @@ Partial Class Lista_Mascotas
         Me.LVPersona = New System.Windows.Forms.ListView()
         Me.CIPer = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.NombrePer = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(146, 51)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Location = New System.Drawing.Point(87, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 13)
+        Me.Label1.Size = New System.Drawing.Size(250, 31)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Lista de Mascotas"
         '
@@ -95,11 +97,21 @@ Partial Class Lista_Mascotas
         Me.NombrePer.Text = "NombreP"
         Me.NombrePer.Width = 134
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(44, 238)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Modificar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Lista_Mascotas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(410, 270)
+        Me.ClientSize = New System.Drawing.Size(410, 272)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.LVPersona)
         Me.Controls.Add(Me.LVMascotas)
         Me.Controls.Add(Me.Label1)
@@ -119,4 +131,5 @@ Partial Class Lista_Mascotas
     Friend WithEvents LVPersona As ListView
     Friend WithEvents NombrePer As ColumnHeader
     Friend WithEvents CIPer As ColumnHeader
+    Friend WithEvents Button1 As Button
 End Class

@@ -1,7 +1,6 @@
 ﻿Public Class ListarPersonas
     Private LofPersonas As List(Of ClassPersona)
-    Private agregartelefono = 1
-    Sub listar()
+    Sub Listar()
         ListView1.Items.Clear()
         Try
             Dim logica As New LogicaPersona
@@ -18,8 +17,6 @@
             Throw ex
         End Try
     End Sub
-    'listviem1.itemcheck anda solo con checkbox'
-    'que inporta este anda bien de bien'
     'botones'
     Private Sub ListView1_MouseClick(sender As Object, e As MouseEventArgs) Handles ListView1.MouseClick
         BLTelefono()
@@ -27,11 +24,14 @@
     Private Sub BorrarPersona_Click(sender As Object, e As EventArgs) Handles BorrarPersona.Click
         Try
             Dim LVindex = ListView1.FocusedItem.Index
-            Dim logica = New LogicaPersona
-            logica.borrarPersona(LofPersonas(LVindex).cedula)
+            Dim logicat = New LogicaTelefono
+            Dim logicap = New LogicaPersona
+            Dim logicam = New LogicaMascota
+            logicam.BajaMascotas(LofPersonas(LVindex).cedula)
+            logicap.BorrarPersona(LofPersonas(LVindex).cedula)
             If IsNothing(LofPersonas(LVindex).telefono) Then
             Else
-                logica.borrarTelefonos(LofPersonas(LVindex))
+                logicat.BorrarTelefonos(LofPersonas(LVindex))
             End If
         Catch ex As Exception
             Throw ex
@@ -41,7 +41,7 @@
         Try
             Dim LV1index = ListView1.FocusedItem.Index
             Dim LV2index = ListView2.FocusedItem.Index
-            Dim logica = New LogicaPersona
+            Dim logica = New LogicaTelefono
             logica.borrarTelefono(LofPersonas(LV1index), LV2index)
         Catch ex As Exception
             Throw ex
@@ -52,7 +52,7 @@
     Private Sub BLTelefono()
         Try
             Dim LVindex = ListView1.FocusedItem.Index
-            Dim logica = New LogicaPersona
+            Dim logica = New LogicaTelefono
             LofPersonas(LVindex).telefono = logica.buscarTelefono(LofPersonas(LVindex).cedula)
             ListView2.Items.Clear()
             For index As Integer = 0 To LofPersonas(LVindex).telefono.Count - 1
@@ -61,12 +61,6 @@
         Catch ex As Exception
             Throw ex
         End Try
-    End Sub
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
     End Sub
     Private Sub Modificar_Click(sender As Object, e As EventArgs) Handles Modificar.Click
         Dim LVindex = ListView1.FocusedItem.Index

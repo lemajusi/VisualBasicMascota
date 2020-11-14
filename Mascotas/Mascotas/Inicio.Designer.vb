@@ -35,10 +35,6 @@ Partial Class Inicio
         Me.ListarPersonaMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.VistaMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TamañoDeFuenteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PequeñaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MedianaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GrandeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ColoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VerdeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NaranjaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -48,9 +44,6 @@ Partial Class Inicio
         Me.AzulToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WhiteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DarkToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PersonaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SobreMascotaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.PersonaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MascotaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -85,20 +78,20 @@ Partial Class Inicio
         'CrearMascotaMenu
         '
         Me.CrearMascotaMenu.Name = "CrearMascotaMenu"
-        Me.CrearMascotaMenu.Size = New System.Drawing.Size(173, 22)
+        Me.CrearMascotaMenu.Size = New System.Drawing.Size(180, 22)
         Me.CrearMascotaMenu.Text = "Registro"
         '
         'BuscaryActualizarMascotaMenu
         '
         Me.BuscaryActualizarMascotaMenu.Name = "BuscaryActualizarMascotaMenu"
-        Me.BuscaryActualizarMascotaMenu.Size = New System.Drawing.Size(173, 22)
+        Me.BuscaryActualizarMascotaMenu.Size = New System.Drawing.Size(180, 22)
         Me.BuscaryActualizarMascotaMenu.Text = "Buscar y Actualizar"
         '
         'ListarMascotaMenu
         '
         Me.ListarMascotaMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CIDePersonaToolStripMenuItem})
         Me.ListarMascotaMenu.Name = "ListarMascotaMenu"
-        Me.ListarMascotaMenu.Size = New System.Drawing.Size(173, 22)
+        Me.ListarMascotaMenu.Size = New System.Drawing.Size(180, 22)
         Me.ListarMascotaMenu.Text = "Listar y Borrar"
         '
         'CIDePersonaToolStripMenuItem
@@ -135,7 +128,7 @@ Partial Class Inicio
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MascotaMenu, Me.PersonaMenu, Me.VistaMenu, Me.HelpMenu})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MascotaMenu, Me.PersonaMenu, Me.VistaMenu})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(383, 24)
@@ -144,109 +137,65 @@ Partial Class Inicio
         '
         'VistaMenu
         '
-        Me.VistaMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TamañoDeFuenteToolStripMenuItem1, Me.ColoresToolStripMenuItem})
+        Me.VistaMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ColoresToolStripMenuItem})
         Me.VistaMenu.Name = "VistaMenu"
         Me.VistaMenu.Size = New System.Drawing.Size(44, 20)
         Me.VistaMenu.Text = "Vista"
-        '
-        'TamañoDeFuenteToolStripMenuItem1
-        '
-        Me.TamañoDeFuenteToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PequeñaToolStripMenuItem, Me.MedianaToolStripMenuItem, Me.GrandeToolStripMenuItem1})
-        Me.TamañoDeFuenteToolStripMenuItem1.Name = "TamañoDeFuenteToolStripMenuItem1"
-        Me.TamañoDeFuenteToolStripMenuItem1.Size = New System.Drawing.Size(171, 22)
-        Me.TamañoDeFuenteToolStripMenuItem1.Text = "Tamaño de Fuente"
-        '
-        'PequeñaToolStripMenuItem
-        '
-        Me.PequeñaToolStripMenuItem.Name = "PequeñaToolStripMenuItem"
-        Me.PequeñaToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
-        Me.PequeñaToolStripMenuItem.Text = "Pequeña"
-        '
-        'MedianaToolStripMenuItem
-        '
-        Me.MedianaToolStripMenuItem.Name = "MedianaToolStripMenuItem"
-        Me.MedianaToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
-        Me.MedianaToolStripMenuItem.Text = "Mediana"
-        '
-        'GrandeToolStripMenuItem1
-        '
-        Me.GrandeToolStripMenuItem1.Name = "GrandeToolStripMenuItem1"
-        Me.GrandeToolStripMenuItem1.Size = New System.Drawing.Size(120, 22)
-        Me.GrandeToolStripMenuItem1.Text = "Grande"
         '
         'ColoresToolStripMenuItem
         '
         Me.ColoresToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VerdeToolStripMenuItem, Me.NaranjaToolStripMenuItem, Me.AmarilloToolStripMenuItem, Me.VioletaToolStripMenuItem, Me.RojoToolStripMenuItem, Me.AzulToolStripMenuItem, Me.WhiteToolStripMenuItem, Me.DarkToolStripMenuItem})
         Me.ColoresToolStripMenuItem.Name = "ColoresToolStripMenuItem"
-        Me.ColoresToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
+        Me.ColoresToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ColoresToolStripMenuItem.Text = "Colores"
         '
         'VerdeToolStripMenuItem
         '
         Me.VerdeToolStripMenuItem.Name = "VerdeToolStripMenuItem"
-        Me.VerdeToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.VerdeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.VerdeToolStripMenuItem.Text = "Verde"
         '
         'NaranjaToolStripMenuItem
         '
         Me.NaranjaToolStripMenuItem.Name = "NaranjaToolStripMenuItem"
-        Me.NaranjaToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.NaranjaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NaranjaToolStripMenuItem.Text = "Naranja"
         '
         'AmarilloToolStripMenuItem
         '
         Me.AmarilloToolStripMenuItem.Name = "AmarilloToolStripMenuItem"
-        Me.AmarilloToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.AmarilloToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AmarilloToolStripMenuItem.Text = "Amarillo"
         '
         'VioletaToolStripMenuItem
         '
         Me.VioletaToolStripMenuItem.Name = "VioletaToolStripMenuItem"
-        Me.VioletaToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.VioletaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.VioletaToolStripMenuItem.Text = "Violeta"
         '
         'RojoToolStripMenuItem
         '
         Me.RojoToolStripMenuItem.Name = "RojoToolStripMenuItem"
-        Me.RojoToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.RojoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.RojoToolStripMenuItem.Text = "Rojo"
         '
         'AzulToolStripMenuItem
         '
         Me.AzulToolStripMenuItem.Name = "AzulToolStripMenuItem"
-        Me.AzulToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.AzulToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AzulToolStripMenuItem.Text = "Azul"
         '
         'WhiteToolStripMenuItem
         '
         Me.WhiteToolStripMenuItem.Name = "WhiteToolStripMenuItem"
-        Me.WhiteToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.WhiteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.WhiteToolStripMenuItem.Text = "White"
         '
         'DarkToolStripMenuItem
         '
         Me.DarkToolStripMenuItem.Name = "DarkToolStripMenuItem"
-        Me.DarkToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.DarkToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DarkToolStripMenuItem.Text = "Dark"
-        '
-        'HelpMenu
-        '
-        Me.HelpMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonaToolStripMenuItem1, Me.SobreMascotaToolStripMenuItem})
-        Me.HelpMenu.Name = "HelpMenu"
-        Me.HelpMenu.Size = New System.Drawing.Size(53, 20)
-        Me.HelpMenu.Text = "Ayuda"
-        '
-        'PersonaToolStripMenuItem1
-        '
-        Me.PersonaToolStripMenuItem1.Name = "PersonaToolStripMenuItem1"
-        Me.PersonaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.PersonaToolStripMenuItem1.Text = "Sobre Persona"
-        '
-        'SobreMascotaToolStripMenuItem
-        '
-        Me.SobreMascotaToolStripMenuItem.Name = "SobreMascotaToolStripMenuItem"
-        Me.SobreMascotaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.SobreMascotaToolStripMenuItem.Text = "Sobre Mascota"
         '
         'ToolStripSeparator1
         '
@@ -332,7 +281,6 @@ Partial Class Inicio
     Friend WithEvents ListarPersonaMenu As ToolStripMenuItem
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents VistaMenu As ToolStripMenuItem
-    Friend WithEvents HelpMenu As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents PersonaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MascotaToolStripMenuItem As ToolStripMenuItem
@@ -341,12 +289,6 @@ Partial Class Inicio
     Friend WithEvents MedianoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GrandeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ColorFondoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TamañoDeFuenteToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents PequeñaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MedianaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents GrandeToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents PersonaToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents SobreMascotaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ColoresToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents VerdeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NaranjaToolStripMenuItem As ToolStripMenuItem

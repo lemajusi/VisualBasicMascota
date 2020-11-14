@@ -133,6 +133,7 @@
     </Compile>
     <Compile Include="Logica\LogicaMascota.vb" />
     <Compile Include="Logica\LogicaPersona.vb" />
+    <Compile Include="Logica\LogicaTelefono.vb" />
     <Compile Include="Persistencia\MascotaController.vb" />
     <Compile Include="Persistencia\TelefonoController.vb" />
     <Compile Include="Persistencia\PersonaController.vb" />

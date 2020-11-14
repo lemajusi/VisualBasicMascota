@@ -2,15 +2,17 @@
     Dim bool As Boolean = False
     Dim Persona As ClassPersona
     Dim logica As New LogicaPersona
+    Dim logicat As New LogicaTelefono
     Dim cedula As Integer
     Dim telefono As Integer
     Dim item As Integer
+
     Public Sub BuscarPer(ci As Integer)
         Try
             cedula = ci
             BANombreP.Text = ""
             BADireccionP.Text = ""
-            Persona = logica.buscarPersona(cedula)
+            Persona = logica.BuscarPersona(cedula)
             If IsNothing(Persona) Then
             Else
                 BANombreP.Text = Persona.nombre
@@ -23,7 +25,7 @@
     End Sub
     Public Sub BuscarTel(Persona As ClassPersona)
         ListView2.Items.Clear()
-        Persona.telefono = logica.buscarTelefono(cedula)
+        Persona.telefono = logicat.BuscarTelefono(cedula)
         If IsNothing(Persona.telefono) Then
         Else
             For index As Integer = 0 To Persona.telefono.Count - 1
@@ -51,8 +53,8 @@
             For index As Integer = 0 To Persona.telefono.Count - 1
                 If Persona.telefono(index) = -1 Then
                 Else
-                    logica.borrarTelefonos(Persona)
-                    logica.altaTelefono(Persona)
+                    logicat.BorrarTelefonos(Persona)
+                    logicat.AltaTelefonos(Persona)
                 End If
             Next
         Catch ex As Exception

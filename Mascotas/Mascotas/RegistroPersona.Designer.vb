@@ -39,10 +39,12 @@ Partial Class RegistroPersona
         Me.Busqueda = New System.Windows.Forms.Button()
         Me.NotOK = New System.Windows.Forms.PictureBox()
         Me.Ok = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.SetTel = New System.Windows.Forms.PictureBox()
+        Me.DropTel = New System.Windows.Forms.PictureBox()
         CType(Me.NotOK, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Ok, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SetTel, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DropTel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -186,22 +188,33 @@ Partial Class RegistroPersona
         Me.Ok.TabStop = False
         Me.Ok.Visible = False
         '
-        'PictureBox1
+        'SetTel
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(232, 205)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 34
-        Me.PictureBox1.TabStop = False
+        Me.SetTel.Image = CType(resources.GetObject("SetTel.Image"), System.Drawing.Image)
+        Me.SetTel.Location = New System.Drawing.Point(232, 205)
+        Me.SetTel.Name = "SetTel"
+        Me.SetTel.Size = New System.Drawing.Size(20, 20)
+        Me.SetTel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.SetTel.TabIndex = 34
+        Me.SetTel.TabStop = False
+        '
+        'DropTel
+        '
+        Me.DropTel.Image = CType(resources.GetObject("DropTel.Image"), System.Drawing.Image)
+        Me.DropTel.Location = New System.Drawing.Point(272, 231)
+        Me.DropTel.Name = "DropTel"
+        Me.DropTel.Size = New System.Drawing.Size(20, 20)
+        Me.DropTel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.DropTel.TabIndex = 35
+        Me.DropTel.TabStop = False
         '
         'RegistroPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(453, 291)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.DropTel)
+        Me.Controls.Add(Me.SetTel)
         Me.Controls.Add(Me.Ok)
         Me.Controls.Add(Me.NotOK)
         Me.Controls.Add(Me.Busqueda)
@@ -225,7 +238,8 @@ Partial Class RegistroPersona
         Me.Text = "Persona"
         CType(Me.NotOK, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Ok, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SetTel, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DropTel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -247,5 +261,6 @@ Partial Class RegistroPersona
     Friend WithEvents Busqueda As Button
     Friend WithEvents NotOK As PictureBox
     Friend WithEvents Ok As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents SetTel As PictureBox
+    Friend WithEvents DropTel As PictureBox
 End Class

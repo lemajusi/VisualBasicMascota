@@ -1,32 +1,24 @@
 ﻿Public Class Inicio
-    Dim Control = 1
     'Persona'
     Private Sub CrearPersonaMenu_Click(sender As Object, e As EventArgs) Handles CrearPersonaMenu.Click
         RegistroPersona.ShowDialog()
     End Sub
+
     Private Sub BuscaryActualizarPersonaMenu_Click(sender As Object, e As EventArgs) Handles BuscaryActualizarPersonaMenu.Click
         BuscaryActualizar.ShowDialog()
     End Sub
+
     Private Sub ListarPersonaMenu_Click(sender As Object, e As EventArgs) Handles ListarPersonaMenu.Click
-        ListarPersonas.listar()
+        ListarPersonas.Listar()
         ListarPersonas.ShowDialog()
     End Sub
+
     'Mascota'
     Private Sub CrearMascotaMenu_Click(sender As Object, e As EventArgs) Handles CrearMascotaMenu.Click
         RegistroMascota.ShowDialog()
     End Sub
     Private Sub BuscaryActualizarMascotaMenu_Click(sender As Object, e As EventArgs) Handles BuscaryActualizarMascotaMenu.Click
         BuscaryActualizarM.ShowDialog()
-    End Sub
-    Private Sub ListarMascotaMenu_Click(sender As Object, e As EventArgs) Handles ListarMascotaMenu.Click
-
-    End Sub
-    'Help'
-    Private Sub PersonaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PersonaToolStripMenuItem.Click
-
-    End Sub
-    Private Sub MascotaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MascotaToolStripMenuItem.Click
-
     End Sub
 
     'Control De Ventana'
@@ -123,6 +115,5 @@
         Catch ex As Exception
             Throw ex
         End Try
-
     End Sub
 End Class

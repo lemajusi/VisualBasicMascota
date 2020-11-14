@@ -1,7 +1,7 @@
 ﻿Public Class TelefonoController
     Private conection_Npg = New Npgsql.NpgsqlConnection
     Private ListaTelefonos = New List(Of Integer)
-    Public Sub altaTelefono(cedula As Integer, telefono As Integer)
+    Public Sub AltaTelefono(cedula As Integer, telefono As Integer)
         Try
             Dim Conn = New Conextion
             conection_Npg = Conn.AbrirConextion
@@ -18,7 +18,7 @@
             ConexionClose()
         End Try
     End Sub
-    Public Function buscarTelefonos(ci As Integer)
+    Public Function BuscarTelefonos(ci As Integer)
         Try
             Dim Conn As New Conextion
             conection_Npg = Conn.AbrirConextion
@@ -46,7 +46,7 @@
             ConexionClose()
         End Try
     End Function
-    Public Sub borrarTelefono(ci As Integer, telefono As Integer)
+    Public Sub BorrarTelefono(ci As Integer, telefono As Integer)
         Try
             Dim Conn = New Conextion
             conection_Npg = Conn.AbrirConextion
@@ -62,12 +62,7 @@
             ConexionClose()
         End Try
     End Sub
-
     Private Sub ConexionClose()
         conection_Npg.close
-    End Sub
-
-    Public Sub borrarTelefonos()
-
     End Sub
 End Class

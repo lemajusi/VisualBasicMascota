@@ -17,24 +17,27 @@
             newPersona.telefono = Ltelefono
             'llamar logica'
             Dim logica = New LogicaPersona
+            Dim logicat = New LogicaTelefono
             Dim persona As ClassPersona
             persona = logica.chequearCi(ci)
             If IsNothing(persona) Then
                 MessageBox.Show("Fallo al crear")
             Else
                 logica.altaPersona(newPersona)
+                logicat.AltaTelefonos(persona)
                 Ok.Visible = True
                 NombreP.Text = ""
                 DireccionP.Text = ""
                 CiP.Text = ""
                 ListView1.Clear()
+
                 MessageBox.Show("Creado Correctamente")
             End If
         Catch ex As Exception
             Throw ex
         End Try
     End Sub
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub SetTel_Click(sender As Object, e As EventArgs) Handles SetTel.Click
         Dim telefono As Integer
         Try
             telefono = TelefonoP.Text
@@ -46,7 +49,11 @@
             TelefonoP.Text = "solo numeros"
         End Try
     End Sub
-
+    Private Sub DropTel_Click(sender As Object, e As EventArgs) Handles DropTel.Click
+        Dim index = ListView1.FocusedItem.Index
+        ListView1.FocusedItem.Remove()
+        Ltelefono.RemoveAt(index)
+    End Sub
     Private Sub Busqueda_Click(sender As Object, e As EventArgs) Handles Busqueda.Click
         Try
             Dim cedula As Integer
@@ -54,6 +61,7 @@
             Dim existe = False
             Dim Persona As New ClassPersona
             Dim logica As New LogicaPersona
+            Dim logicat As New LogicaTelefono
             Persona = logica.buscarPersona(cedula)
             If IsNothing(Persona) Then
                 MessageBox.Show("No existe este usuario")
@@ -63,7 +71,7 @@
                 DireccionP.Text = Persona.direccion
             End If
             If existe Then
-                Persona.telefono = logica.buscarTelefono(Persona.cedula)
+                Persona.telefono = logicat.BuscarTelefono(Persona.cedula)
                 If IsNothing(Persona.telefono) Then
                 Else
                     For index As Integer = 0 To Persona.telefono.Count - 1
