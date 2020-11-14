@@ -74,7 +74,6 @@ Partial Class BuscaryActualizarM
         '
         'AñoNacMas
         '
-        Me.AñoNacMas.Enabled = False
         Me.AñoNacMas.Location = New System.Drawing.Point(58, 176)
         Me.AñoNacMas.Name = "AñoNacMas"
         Me.AñoNacMas.Size = New System.Drawing.Size(180, 20)

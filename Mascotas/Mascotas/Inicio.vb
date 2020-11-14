@@ -17,7 +17,7 @@
     Private Sub CrearMascotaMenu_Click(sender As Object, e As EventArgs) Handles CrearMascotaMenu.Click
         RegistroMascota.ShowDialog()
     End Sub
-    Private Sub BuscaryActualizarMascotaMenu_Click(sender As Object, e As EventArgs) Handles BuscaryActualizarMascotaMenu.Click
+    Private Sub BuscaryActualizarMascotaMenu_Click(sender As Object, e As EventArgs) 
         BuscaryActualizarM.ShowDialog()
     End Sub
 

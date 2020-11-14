@@ -15,4 +15,8 @@
         Dim persistencia = New MascotaController
         Return persistencia.BuscarMascota(ci, nombre)
     End Function
+    Public Sub UpdateMascota(ci As Integer, nombre As String, añoNac As Integer)
+        Dim persistencia = New MascotaController
+        persistencia.UpdateMascota(ci, nombre, añoNac)
+    End Sub
 End Class
